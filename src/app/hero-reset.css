@@ -1,0 +1,5 @@
+.interface-image .image-sun { border-radius:0; }
+.interface-image .image-block-one { left:12%; width:26%; height:49%; clip-path:none; }
+.interface-image .image-block-two { right:11%; width:38%; height:69%; clip-path:none; }
+.interface-image .image-block-one:before,
+.interface-image .image-block-two:before { content:""; position:absolute; inset:13% 20%; border-top:1px solid rgba(245,241,232,.5); border-bottom:1px solid rgba(245,241,232,.5); }
