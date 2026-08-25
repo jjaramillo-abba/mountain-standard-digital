@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Header } from "@/components/site-shell";
 
 function SignatureGeometry() {
@@ -25,17 +26,14 @@ function SignatureGeometry() {
 }
 
 function ResolvedExperience() {
-  return <div className="resolved-experience" aria-label="A finished editorial demonstration of a responsive website experience">
-    <div className="experience-desktop">
-      <div className="experience-nav"><span>STUDIO</span><div><i>Approach</i><i>Spaces</i><i>Journal</i></div><b>Contact</b></div>
-      <div className="experience-art" aria-hidden="true"><span className="art-sky"/><span className="art-orbit"/><span className="art-column art-column-a"/><span className="art-column art-column-b"/><span className="art-column art-column-c"/><span className="art-rule"/></div>
-      <div className="experience-story"><p>DESIGN WITH DIRECTION</p><h2>Built around the way people browse now.</h2><span>Clear hierarchy. Faster decisions. A better experience on every screen.</span><button type="button">Explore <b>↗</b></button></div>
-      <p className="experience-detail">A more considered digital first impression.</p>
+  return <div className="resolved-experience savages-experience" aria-label="Savages Fly Gear homepage experience resolving from Mountain Standard Digital geometry">
+    <div className="savages-desktop">
+      <div className="savages-nav"><Image src="/assets/savages-logo.png" alt="Savages Fly Gear" width={58} height={58} priority/><nav aria-label="Savages navigation"><span>Flies</span><span>Gear</span><span>Stories</span><span>About</span></nav><span className="savages-cart" aria-hidden="true">○</span></div>
+      <div className="savages-primary-state"><div className="savages-trout"><Image src="/assets/savages-trout.jpg" alt="Brown trout held beside a streamer fly" fill sizes="(max-width: 800px) 100vw, 34vw" priority/></div><div className="savages-copy"><p>STREAMER-FOCUSED FLY GEAR</p><h2>CHASE BIG FISH.<br/>THROW BIG FLIES.</h2><span>Streamer-focused flies and gear for anglers who hunt the fish worth remembering.</span><div><button type="button">Shop Streamers <b>↗</b></button><i>#StripStreamers</i></div></div></div>
+      <div className="savages-secondary-state"><div className="savages-flies"><Image src="/assets/savages-flies.jpg" alt="Assorted streamer flies in fly boxes" fill sizes="34vw"/></div><div className="savages-secondary-copy"><p>THE STREAMER EDIT</p><h2>Big flies.<br/>Bigger eats.</h2><span>Built for the chase.</span></div><div className="savages-campaign"><Image src="/assets/savages-last-cast.jpg" alt="Last Cast campaign art" fill sizes="14vw"/></div></div>
     </div>
-    <div className="experience-mobile">
-      <div className="mobile-experience-nav"><span>STUDIO</span><b>MENU</b></div>
-      <div className="mobile-experience-art" aria-hidden="true"><span/><i/><em/></div>
-      <p>DESIGN WITH DIRECTION</p><h2>Built around the way people browse now.</h2><span>Clear hierarchy. Faster decisions. A better experience on every screen.</span><button type="button">Explore <b>↗</b></button>
+    <div className="savages-mobile">
+      <div className="savages-mobile-nav"><Image src="/assets/savages-logo.png" alt="Savages Fly Gear" width={44} height={44}/><b>MENU</b></div><div className="savages-mobile-trout"><Image src="/assets/savages-trout.jpg" alt="Brown trout held beside a streamer fly" fill sizes="100vw"/></div><p>STREAMER-FOCUSED FLY GEAR</p><h2>CHASE BIG FISH.<br/>THROW BIG FLIES.</h2><span>Streamer-focused flies and gear for anglers who hunt the fish worth remembering.</span><button type="button">Shop Streamers <b>↗</b></button><i>#StripStreamers</i>
     </div>
   </div>;
 }
