@@ -1,0 +1,1 @@
+import type {MetadataRoute} from 'next'; export default function sitemap():MetadataRoute.Sitemap {const routes=['','/website-modernization','/process','/work','/about','/service-area','/contact'];return routes.map(x=>({url:`https://mountainstandard.digital${x}`,lastModified:new Date(),changeFrequency:'monthly',priority:x===''?1:.7}))}
