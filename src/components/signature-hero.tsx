@@ -5,19 +5,19 @@ function SignatureGeometry() {
   return <div className="signature-geometry" role="img" aria-label="Abstract spatial geometry aligning into a modern, mobile-oriented digital layout">
     <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
       <g className="spatial-field">
-        <path d="M-90 642C180 452 404 734 660 490S1105 300 1680 480"/><path d="M-70 748C194 525 450 816 742 568s530-151 938 36"/><path d="M75 192c245 155 350-82 590 72s403 55 746-137"/><path d="M118 110v694M330 62v758M560 112v652M822 52v796M1088 102v704M1352 48v780M1514 118v628"/>
+        <path d="M-90 634C175 448 390 702 640 488S1118 314 1680 466"/><path d="M-50 742C210 548 454 792 726 572s536-145 944 26"/><path d="M90 204c230 142 355-70 578 78s400 48 732-125"/><path d="M414 850c176-124 258-239 449-205s301 20 519-128"/>
       </g>
-      <g className="alignment-grid"><path d="M72 152H1530M72 289H1530M72 426H1530M72 563H1530M72 700H1530"/><path d="M235 70V824M493 70V824M751 70V824M1009 70V824M1267 70V824"/></g>
+      <g className="alignment-grid"><path d="M820 192H1515M820 326H1515M820 460H1515M820 594H1515M820 728H1515"/><path d="M922 132V790M1124 132V790M1326 132V790M1492 132V790"/></g>
       <g className="layout-geometry">
-        <g className="layout-nav"><path d="M974 188h58M1062 188h44M1135 188h52M1218 188h48"/></g>
-        <g className="layout-media"><rect x="976" y="244" width="406" height="245"/><path d="M1010 286h107v141h-107zM1147 286h190v141h-190z"/><path d="M976 427h406"/></g>
-        <g className="layout-copy"><path d="M973 548h296"/><path d="M973 582h338"/><path d="M973 616h218"/><path className="copy-fine" d="M973 668h122M973 684h169"/><rect x="973" y="726" width="132" height="35"/></g>
-        <g className="layout-detail"><path d="M1240 548h143M1240 582h93M1240 616h128"/></g>
+        <g className="layout-nav"><path d="M930 188h58M1019 188h44M1094 188h52"/><rect x="1242" y="171" width="104" height="33"/></g>
+        <g className="layout-media"><rect className="media-plane" x="930" y="244" width="452" height="248"/><rect className="media-sky" x="930" y="244" width="186" height="248"/><path className="media-crop" d="M960 287h124v162H960zM1147 287h202v74h-202zM1147 385h202v74h-202z"/><path className="media-rule" d="M930 447h452"/></g>
+        <g className="layout-copy"><path className="type-strong" d="M930 558h272M930 596h353M930 634h228"/><path className="copy-fine" d="M930 682h160M930 699h228"/><rect x="930" y="744" width="143" height="38"/></g>
+        <g className="layout-detail"><path d="M1218 558h163M1218 596h116M1218 634h145"/><path className="detail-accent" d="M1218 682h80"/></g>
       </g>
       <g className="mobile-geometry">
-        <path className="mobile-nav" d="M1212 199h48M1284 199h48"/>
-        <rect className="mobile-media" x="1116" y="253" width="252" height="144"/><path className="mobile-shape" d="M1140 276h82v97h-82zM1250 276h94v97h-94z"/>
-        <path className="mobile-type" d="M1116 451h193M1116 479h226M1116 507h141"/><path className="mobile-fine" d="M1116 556h178M1116 572h149"/><rect className="mobile-action" x="1116" y="613" width="128" height="34"/>
+        <path className="mobile-nav" d="M1120 194h48M1285 194h48"/><rect className="mobile-nav-active" x="1350" y="177" width="35" height="32"/>
+        <rect className="mobile-media" x="1116" y="253" width="270" height="155"/><rect className="mobile-media-sky" x="1116" y="253" width="104" height="155"/><path className="mobile-shape" d="M1140 277h58v106h-58zM1242 277h119v48h-119zM1242 342h119v41h-119z"/>
+        <path className="mobile-type" d="M1116 462h206M1116 493h244M1116 524h152"/><path className="mobile-fine" d="M1116 572h193M1116 590h159"/><rect className="mobile-action" x="1116" y="631" width="139" height="37"/>
       </g>
       <g className="geometry-nodes"><circle cx="974" cy="188" r="4"/><circle cx="976" cy="489" r="4"/><circle cx="973" cy="548" r="4"/><circle cx="1105" cy="761" r="4"/></g>
     </svg>
@@ -31,7 +31,7 @@ export function SignatureHero() {
       <SignatureGeometry/>
       <div className="signature-content">
         <p className="signature-name">MOUNTAIN STANDARD <span>DIGITAL</span></p>
-        <h1>Your business moved forward.<br/>Your website should too.</h1>
+        <h1><span>Your business moved forward.</span><span>Your website should too.</span></h1>
         <p className="signature-copy">Mountain Standard Digital modernizes outdated websites into fast, clear, mobile-first experiences that better represent the business behind them.</p>
         <div className="signature-actions"><Link className="signature-primary" href="/contact">Modernize My Website <span>↗</span></Link><Link className="signature-secondary" href="/process">See How It Works</Link></div>
       </div>

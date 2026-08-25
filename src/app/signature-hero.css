@@ -12,9 +12,37 @@
 .layout-geometry { animation:signature-layout-safe 10s ease-in-out infinite; transform:none !important; }
 .mobile-geometry { animation:signature-mobile-safe 10s ease-in-out infinite; transform:none !important; }
 
+/* 2C.1 refinement: quieter field, resolved editorial composition */
+.signature-prototype .signature-content { width:calc(100% - 7rem); max-width:1260px; }
+.signature-prototype .signature-name { margin-bottom:2.45rem; font-size:clamp(1rem,1.18vw,1.28rem); letter-spacing:.145em; }
+.signature-prototype .signature-name:after { content:""; display:block; width:76px; height:2px; margin-top:.85rem; background:#b75d42; }
+.signature-prototype .signature-content h1 { max-width:1200px; font-size:clamp(4rem,5vw,6.25rem); line-height:.91; letter-spacing:-.07em; }
+.signature-prototype .signature-content h1 span { display:block; white-space:nowrap; }
+.signature-prototype .signature-copy { margin-top:1.65rem; }.signature-prototype .signature-primary { border-radius:2px; }
+.signature-prototype .spatial-field { stroke:#9db7c2; stroke-width:1.1; opacity:.26; }.signature-prototype .alignment-grid { stroke:#60808e; stroke-width:.62; }
+.signature-prototype .layout-geometry,.signature-prototype .mobile-geometry { stroke:#f5f1e8; stroke-width:1.35; }.signature-prototype .layout-nav { stroke:#e6ecec; stroke-width:1.6; }.signature-prototype .layout-nav rect { fill:#b75d42; stroke:none; }
+.signature-prototype .media-plane { fill:#49647a; fill-opacity:.96; stroke:none; }.signature-prototype .media-sky { fill:#dde8ee; fill-opacity:.92; stroke:none; }.signature-prototype .media-crop { stroke:#17191c; stroke-width:2.2; }.signature-prototype .media-rule { stroke:#f5f1e8; stroke-width:1.2; opacity:.8; }.signature-prototype .type-strong { stroke:#f5f1e8; stroke-width:6.5; }
+.signature-prototype .layout-copy .copy-fine { stroke:#a8c2ce; stroke-width:1.6; }.signature-prototype .layout-copy rect { fill:#b75d42; fill-opacity:1; stroke:none; }.signature-prototype .layout-detail { stroke:#d8e4e7; stroke-width:1.5; }.signature-prototype .detail-accent { stroke:#b75d42; stroke-width:2.4; }
+.signature-prototype .mobile-nav { stroke:#f5f1e8; stroke-width:1.6; }.signature-prototype .mobile-nav-active { fill:#b75d42; stroke:none; }.signature-prototype .mobile-media { fill:#49647a; fill-opacity:1; stroke:none; }.signature-prototype .mobile-media-sky { fill:#dde8ee; fill-opacity:.94; stroke:none; }.signature-prototype .mobile-shape { stroke:#17191c; stroke-width:2; }.signature-prototype .mobile-type { stroke:#f5f1e8; stroke-width:5.8; }.signature-prototype .mobile-fine { stroke:#a8c2ce; stroke-width:1.6; }.signature-prototype .mobile-action { fill:#b75d42; fill-opacity:1; stroke:none; }
+
+@keyframes refined-field { 0%,17% { opacity:.28; } 36%,100% { opacity:.09; } }
+@keyframes refined-grid { 0%,17% { opacity:0; } 34%,73% { opacity:.26; } 84%,100% { opacity:.12; } }
+@keyframes refined-layout { 0%,33% { opacity:0; } 48%,73% { opacity:1; } 84%,100% { opacity:.3; } }
+@keyframes refined-mobile { 0%,70% { opacity:0; } 84%,100% { opacity:1; } }
+@keyframes refined-nodes { 0%,26% { opacity:0; } 40%,76% { opacity:1; } 88%,100% { opacity:.3; } }
+.signature-prototype .spatial-field { animation:refined-field 12s ease-in-out infinite; }.signature-prototype .alignment-grid { animation:refined-grid 12s ease-in-out infinite; }.signature-prototype .layout-geometry { animation:refined-layout 12s cubic-bezier(.65,0,.25,1) infinite; }.signature-prototype .mobile-geometry { animation:refined-mobile 12s cubic-bezier(.65,0,.25,1) infinite; }.signature-prototype .geometry-nodes { animation:refined-nodes 12s ease-in-out infinite; }
+
 @media (max-width:800px) {
   .signature-canvas { display:flex; flex-direction:column; }
   .signature-content { order:1; }
   .signature-geometry { order:2; }
-  .mobile-geometry { animation:mobileField 5.5s ease-in-out infinite; }
+  .signature-prototype .signature-content { width:auto; }
+  .signature-prototype .signature-name { font-size:.8rem; margin-bottom:2rem; }
+  .signature-prototype .signature-name:after { width:48px; margin-top:.65rem; }
+  .signature-prototype .signature-content h1 { font-size:clamp(3.1rem,12.6vw,4.65rem); line-height:.9; }
+  .signature-prototype .signature-content h1 span { white-space:normal; }
+  .signature-prototype .spatial-field { animation:refined-field 5.5s ease-in-out infinite; }
+  .signature-prototype .alignment-grid { animation:refined-grid 5.5s ease-in-out infinite; }
+  .signature-prototype .mobile-geometry { animation:refined-mobile 5.5s ease-in-out infinite; }
+  .signature-prototype .geometry-nodes { animation:refined-nodes 5.5s ease-in-out infinite; }
 }
