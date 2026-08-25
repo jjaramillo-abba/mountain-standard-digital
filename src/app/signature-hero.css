@@ -1,0 +1,20 @@
+@keyframes signature-layout-safe {
+  0%,27% { opacity:0; }
+  44%,62% { opacity:1; }
+  73%,100% { opacity:.08; }
+}
+
+@keyframes signature-mobile-safe {
+  0%,59% { opacity:0; }
+  76%,100% { opacity:1; }
+}
+
+.layout-geometry { animation:signature-layout-safe 10s ease-in-out infinite; transform:none !important; }
+.mobile-geometry { animation:signature-mobile-safe 10s ease-in-out infinite; transform:none !important; }
+
+@media (max-width:800px) {
+  .signature-canvas { display:flex; flex-direction:column; }
+  .signature-content { order:1; }
+  .signature-geometry { order:2; }
+  .mobile-geometry { animation:mobileField 5.5s ease-in-out infinite; }
+}
