@@ -24,6 +24,22 @@ function SignatureGeometry() {
   </div>;
 }
 
+function ResolvedExperience() {
+  return <div className="resolved-experience" aria-label="A finished editorial demonstration of a responsive website experience">
+    <div className="experience-desktop">
+      <div className="experience-nav"><span>STUDIO</span><div><i>Approach</i><i>Spaces</i><i>Journal</i></div><b>Contact</b></div>
+      <div className="experience-art" aria-hidden="true"><span className="art-sky"/><span className="art-orbit"/><span className="art-column art-column-a"/><span className="art-column art-column-b"/><span className="art-column art-column-c"/><span className="art-rule"/></div>
+      <div className="experience-story"><p>DESIGN WITH DIRECTION</p><h2>Built around the way people browse now.</h2><span>Clear hierarchy. Faster decisions. A better experience on every screen.</span><button type="button">Explore <b>↗</b></button></div>
+      <p className="experience-detail">A more considered digital first impression.</p>
+    </div>
+    <div className="experience-mobile">
+      <div className="mobile-experience-nav"><span>STUDIO</span><b>MENU</b></div>
+      <div className="mobile-experience-art" aria-hidden="true"><span/><i/><em/></div>
+      <p>DESIGN WITH DIRECTION</p><h2>Built around the way people browse now.</h2><span>Clear hierarchy. Faster decisions. A better experience on every screen.</span><button type="button">Explore <b>↗</b></button>
+    </div>
+  </div>;
+}
+
 export function SignatureHero() {
   return <div className="signature-prototype">
     <Header/>
@@ -35,6 +51,7 @@ export function SignatureHero() {
         <p className="signature-copy">Mountain Standard Digital modernizes outdated websites into fast, clear, mobile-first experiences that better represent the business behind them.</p>
         <div className="signature-actions"><Link className="signature-primary" href="/contact">Modernize My Website <span>↗</span></Link><Link className="signature-secondary" href="/process">See How It Works</Link></div>
       </div>
+      <ResolvedExperience/>
     </section></main>
   </div>;
 }
