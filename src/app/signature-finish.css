@@ -92,3 +92,33 @@
   .signature-prototype .spatial-field{animation:integration-field 21s ease-in-out infinite!important}.signature-prototype .alignment-grid{animation:integration-grid 21s ease-in-out infinite!important}
 }
 @media(prefers-reduced-motion:reduce) and (min-width:801px){.signature-prototype .savages-experience{width:440px}.signature-prototype .savages-modern-state{opacity:1;transform:scale(1.25);transform-origin:top right}.signature-prototype .modern-page-track{transform:translateY(-212px);animation:none!important}.signature-prototype .savages-mobile-state{opacity:1;transform:none;animation:none!important}.signature-prototype .savages-legacy-state{opacity:.25;transform:scale(.82) translateX(-45%);animation:none!important}}
+
+/* Focused visual refinement: a single fixed stage makes the transformation read at first glance. */
+@keyframes showcase-legacy { 0%,9%{opacity:0;transform:translate(24px,12px) scale(.65)} 12%,24%{opacity:1;transform:none} 30%,100%{opacity:0;transform:translate(-18px,-9px) scale(.82)} }
+@keyframes showcase-modern { 0%,30%{opacity:0;transform:translate(32px,18px) scale(.88)} 37%,95%{opacity:1;transform:none} 100%{opacity:0;transform:translate(-24px,12px) scale(.96)} }
+@keyframes showcase-page-depth { 0%,52%{transform:translateY(0)} 62%,95%{transform:translateY(-158px)} 100%{transform:translateY(-158px)} }
+@keyframes showcase-phone { 0%,67%{opacity:0;transform:translate(32px,36px) scale(.86)} 74%,95%{opacity:1;transform:none} 100%{opacity:0;transform:translate(32px,36px) scale(.86)} }
+@keyframes showcase-before-label { 0%,10%{opacity:0} 12%,24%{opacity:1} 29%,100%{opacity:0} }
+@keyframes showcase-modern-label { 0%,34%{opacity:0} 38%,67%{opacity:1} 70%,100%{opacity:0} }
+@keyframes showcase-mobile-label { 0%,71%{opacity:0} 75%,95%{opacity:1} 100%{opacity:0} }
+
+@media(min-width:801px){
+  .signature-prototype .signature-canvas{min-height:790px}
+  .signature-prototype .signature-content{padding-top:5.4rem;padding-bottom:4.5rem}
+  .signature-prototype .savages-experience{position:absolute;top:12%;right:0;width:min(600px,43vw);min-height:610px;height:610px;color:#f5eedc}
+  .signature-prototype .savages-cue{top:-39px;left:0;z-index:8;display:flex;align-items:center;gap:10px;color:#b75d42;font-size:12px;font-weight:800;letter-spacing:.18em;line-height:1}
+  .signature-prototype .savages-cue:before{width:23px;height:2px;background:#b75d42;content:""}
+  .signature-prototype .savages-before{animation:showcase-before-label 21s linear infinite}.signature-prototype .savages-after{animation:showcase-modern-label 21s linear infinite}.signature-prototype .savages-mobile-cue{animation:showcase-mobile-label 21s linear infinite}
+  .signature-prototype .savages-legacy-state{inset:74px 12% 82px 15%;z-index:1;box-shadow:0 18px 38px rgba(27,29,23,.16);animation:showcase-legacy 21s cubic-bezier(.65,0,.25,1) infinite}
+  .signature-prototype .savages-modern-state{inset:0;z-index:2;overflow:hidden;box-shadow:0 24px 55px rgba(27,29,23,.16);animation:showcase-modern 21s cubic-bezier(.65,0,.25,1) infinite}
+  .signature-prototype .modern-page-track{animation:showcase-page-depth 21s cubic-bezier(.65,0,.25,1) infinite}
+  .signature-prototype .modern-mini-head{height:64px;padding:0 25px;background:#121510;border-bottom:1px solid rgba(245,238,220,.22)}
+  .signature-prototype .modern-mini-head b{font:400 29px/1 Impact,Outfit,sans-serif;letter-spacing:.045em}.signature-prototype .modern-mini-head small{margin-top:4px;font-size:7px;letter-spacing:.42em}.signature-prototype .modern-mini-head nav{margin-left:auto;color:rgba(245,238,220,.84);font-size:8px;font-weight:800;letter-spacing:.13em}.signature-prototype .modern-mini-head img{width:42px;height:42px;margin-left:22px}
+  .signature-prototype .modern-mini-body{height:426px;grid-template-columns:1.07fr .93fr}.signature-prototype .modern-mini-image img{object-position:54% center}.signature-prototype .modern-mini-copy{padding:34px;background:#1b1e17}.signature-prototype .modern-mini-copy p{font-size:8px;letter-spacing:.18em}.signature-prototype .modern-mini-copy h2{margin-top:15px;font-size:1.68rem;line-height:.86;white-space:nowrap}.signature-prototype .modern-mini-copy>span{max-width:205px;margin-top:16px;font-size:9px;line-height:1.6}.signature-prototype .modern-mini-copy div{gap:13px;margin-top:22px}.signature-prototype .modern-mini-copy button{padding:11px 13px}
+  .signature-prototype .modern-editorial{height:284px;grid-template-columns:1.04fr .96fr}.signature-prototype .modern-editorial>div:last-child{padding:30px}.signature-prototype .modern-editorial h2{font-size:2.05rem}.signature-prototype .savages-collection-state{display:none}
+  .signature-prototype .savages-mobile-state{z-index:5;inset:auto 34px -21px auto;width:226px;height:470px;box-sizing:border-box;border:10px solid #10120f;border-radius:37px;padding:18px 14px 20px;background:#151814;box-shadow:0 20px 40px rgba(0,0,0,.28),inset 0 0 0 1px rgba(255,255,255,.16);overflow:hidden;animation:showcase-phone 21s cubic-bezier(.65,0,.25,1) infinite}
+  .signature-prototype .savages-mobile-state:before{position:absolute;z-index:9;top:7px;left:50%;width:58px;height:15px;border-radius:0 0 11px 11px;background:#090a08;content:"";transform:translateX(-50%)}
+  .signature-prototype .mobile-mini-head{height:41px;padding-top:2px}.signature-prototype .mobile-mini-head b{font-size:22px}.signature-prototype .mobile-mini-head small{font-size:5px}.signature-prototype .mobile-mini-head img{width:32px;height:32px}.signature-prototype .mobile-mini-head strong{font-size:7px}.signature-prototype .mobile-mini-image{height:131px;margin:13px -14px 15px;width:calc(100% + 28px)}.signature-prototype .savages-mobile-state>p{font-size:7px}.signature-prototype .savages-mobile-state h2{font-size:2rem}.signature-prototype .savages-mobile-state>span{font-size:8px;line-height:1.45}.signature-prototype .savages-mobile-state button{padding:9px 10px;font-size:7px}
+  .signature-prototype .spatial-field{animation:integration-field 21s ease-in-out infinite!important}.signature-prototype .alignment-grid{animation:integration-grid 21s ease-in-out infinite!important}
+}
+@media(prefers-reduced-motion:reduce) and (min-width:801px){.signature-prototype .savages-legacy-state{opacity:.35;transform:scale(.72) translate(-30%,9%);animation:none!important}.signature-prototype .savages-modern-state{opacity:1;transform:none;animation:none!important}.signature-prototype .modern-page-track{transform:translateY(-158px);animation:none!important}.signature-prototype .savages-mobile-state{opacity:1;transform:none;animation:none!important}.signature-prototype .savages-cue{display:none}}
