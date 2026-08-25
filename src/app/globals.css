@@ -2,6 +2,7 @@
 @import "./signature-hero.css";
 @import "./signature-refine.css";
 @import "./signature-finish.css";
+@import "./savages-study.css";
 @import "tailwindcss";
 :root { --ink:#17191c; --cream:#f5f1e8; --blue:#49647a; --sky:#dde8ee; --canyon:#b75d42; }
 * { box-sizing:border-box; } html { scroll-behavior:smooth; } body { margin:0; background:var(--cream); color:var(--ink); font-family:Inter,Arial,sans-serif; } a { color:inherit; text-decoration:none; } ::selection { background:#b8c9d2; }
