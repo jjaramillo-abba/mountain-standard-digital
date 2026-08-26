@@ -122,3 +122,10 @@
   .signature-prototype .spatial-field{animation:integration-field 21s ease-in-out infinite!important}.signature-prototype .alignment-grid{animation:integration-grid 21s ease-in-out infinite!important}
 }
 @media(prefers-reduced-motion:reduce) and (min-width:801px){.signature-prototype .savages-legacy-state{opacity:.35;transform:scale(.72) translate(-30%,9%);animation:none!important}.signature-prototype .savages-modern-state{opacity:1;transform:none;animation:none!important}.signature-prototype .modern-page-track{transform:translateY(-158px);animation:none!important}.signature-prototype .savages-mobile-state{opacity:1;transform:none;animation:none!important}.signature-prototype .savages-cue{display:none}}
+
+/* Permanent hero artwork — deliberately outside the animated Savages showcase. */
+.signature-prototype .signature-geometry{position:absolute!important;inset:0!important;z-index:0!important;display:block!important;order:initial!important;height:auto!important;margin:0!important;overflow:hidden!important;pointer-events:none}
+.signature-prototype .signature-geometry svg{display:block;width:100%!important;height:100%!important;margin:0!important}
+.signature-prototype .mountain-ridges{fill:none;stroke:#b75d42;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.1}
+.signature-prototype .mountain-ridges .ridge-far{opacity:.1}.signature-prototype .mountain-ridges .ridge-mid{opacity:.13}.signature-prototype .mountain-ridges .ridge-near{opacity:.17}.signature-prototype .mountain-ridges .ridge-accent{opacity:.12}
+@media(max-width:800px){.signature-prototype .signature-geometry{position:absolute!important;inset:0!important;height:auto!important;margin:0!important}.signature-prototype .signature-geometry svg{width:185%!important;height:100%!important;margin-left:-62%!important}.signature-prototype .mountain-ridges{stroke-width:2.5}}
