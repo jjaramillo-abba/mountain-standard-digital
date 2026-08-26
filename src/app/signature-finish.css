@@ -126,5 +126,5 @@
 /* Permanent hero artwork — deliberately outside the animated Savages showcase. */
 .signature-prototype .signature-geometry{position:absolute!important;inset:0!important;z-index:0!important;display:block!important;order:initial!important;height:auto!important;margin:0!important;overflow:hidden!important;pointer-events:none}
 .signature-prototype .signature-geometry svg{display:block;width:100%!important;height:100%!important;margin:0!important}
-.signature-prototype .mountain-outline{opacity:.14}
+.signature-prototype .mountain-outline{opacity:.16}
 @media(max-width:800px){.signature-prototype .signature-geometry{position:absolute!important;inset:0!important;height:auto!important;margin:0!important}.signature-prototype .signature-geometry svg{width:185%!important;height:100%!important;margin-left:-62%!important}.signature-prototype .mountain-ridges{stroke-width:2.5}}
