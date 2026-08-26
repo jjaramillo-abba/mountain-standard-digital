@@ -5,7 +5,7 @@ import { Header } from "@/components/site-shell";
 function SignatureGeometry() {
   return <div className="signature-geometry" role="img" aria-label="Abstract Mountain Standard Digital mountain ridgelines">
     <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-      <g className="mountain-ridges">
+      <g className="mountain-ridges" transform="translate(0 -135)">
         <path className="ridge-distant" d="M-140 532C15 510 119 455 218 386c56-39 111-48 161-22 49 26 79 14 121-25 42-39 86-47 127-19 35 24 65 51 109 35 52-19 95-63 157-63 62 0 108 38 151 70 52 38 107 47 180 26"/>
         <path className="ridge-middle" d="M-140 736C10 699 108 629 190 559c48-41 93-58 136-41 43 17 77 1 117-43 50-56 105-82 155-55 43 23 66 68 111 53 46-16 81-76 125-111l42-34c38 56 81 104 135 109 59 5 109-37 171-36"/>
         <path className="ridge-foreground" d="M-170 900C-7 866 103 793 199 702c54-51 105-79 153-55 53 27 91 4 137-54 58-73 108-156 163-216l55-59c27-29 52-25 77 15l162 260c34 54 69 92 118 101 57 11 109-24 166-70 52-42 108-66 179-57"/>
