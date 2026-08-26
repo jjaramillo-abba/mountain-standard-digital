@@ -4,7 +4,7 @@ import Link from "next/link";
 const principles = [
   ["01", "Mobile-first", "Built for how customers actually browse today."],
   ["02", "Built around your business", "Keep what makes your company recognizable. Improve the experience around it."],
-  ["03", "Straightforward", "Professional website modernization without turning it into a giant agency engagement."],
+  ["03", "Clear scope", "Know what we’re changing, what we’re keeping, and what it will cost before we build."],
 ];
 
 const inclusions = [
