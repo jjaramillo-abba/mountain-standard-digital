@@ -108,7 +108,7 @@
   .signature-prototype .signature-name{margin-bottom:2.15rem}.signature-prototype .signature-name:after{margin-top:.72rem}
   .signature-prototype .signature-copy{margin-top:1.45rem;line-height:1.62}
   .signature-prototype .signature-actions{margin-top:2.05rem}.signature-prototype .signature-secondary{display:inline-flex;align-items:center;min-height:48px}
-  .signature-prototype .savages-experience{position:absolute;top:10%;right:0;width:min(660px,36vw);min-height:590px;height:590px;color:#f5eedc;clip-path:inset(-48px 0 -110px 0);isolation:isolate}
+  .signature-prototype .savages-experience{position:absolute;top:10%;right:0;width:min(660px,34vw);min-height:590px;height:590px;color:#f5eedc;clip-path:inset(-48px 0 -110px 0);isolation:isolate}
   .signature-prototype .savages-cue{top:-39px;left:0;z-index:8;display:flex;align-items:center;gap:10px;color:#b75d42;font-size:12px;font-weight:800;letter-spacing:.18em;line-height:1}
   .signature-prototype .savages-cue:before{width:23px;height:2px;background:#b75d42;content:""}
   .signature-prototype .savages-before{animation:showcase-before-label 21s linear infinite}.signature-prototype .savages-after{animation:showcase-modern-label 21s linear infinite}.signature-prototype .savages-mobile-cue{animation:showcase-mobile-label 21s linear infinite}
