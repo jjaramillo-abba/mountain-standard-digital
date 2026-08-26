@@ -72,7 +72,7 @@ export function HomepageSections() {
     </section>
 
     <section className="home-pricing" aria-labelledby="pricing-title">
-      <div className="wrap price-preview"><div className="price-preview-intro"><p className="home-kicker">STRAIGHTFORWARD PRICING</p><h2 id="pricing-title">Simple pricing.<br /><em>No surprises.</em></h2><p>Straightforward sites start here. If your website needs more, we define the scope and price before work begins.</p></div>
+      <div className="wrap price-preview"><div className="price-preview-intro"><p className="home-kicker">STRAIGHTFORWARD PRICING</p><h2 id="pricing-title">Simple pricing.<br /><em>No surprises.</em></h2><p>Straightforward modernizations start here. If your website needs more, we define the scope and price before work begins.</p></div>
         <div className="price-preview-offers">
           <article><p>01 / WEBSITE MODERNIZATION</p><h3>Starting at $500</h3><span>Focused modernization of an established small-business website.</span></article>
           <article><p>02 / HOSTING &amp; MAINTENANCE</p><h3>$50 <small>/ month</small></h3><span>Managed hosting and ongoing site care after launch.</span></article>
