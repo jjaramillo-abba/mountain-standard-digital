@@ -206,3 +206,115 @@
   .signature-prototype .modern-mini-head nav:has(button:not(.is-active):hover,button:not(.is-active):focus-visible) .is-active{color:rgba(245,238,220,.78)}
   .signature-prototype .modern-mini-head img{margin-left:16px}
 }
+
+/* Sprint 2C.9: one composed MSD hero with a deliberate 22-second proof sequence. */
+@keyframes msd29-legacy{
+  0%,9.5%{opacity:0;transform:translateY(8px) scale(.96)}
+  11.4%,25%{opacity:1;transform:none}
+  34%,100%{opacity:0;transform:scale(.94)}
+}
+@keyframes msd29-modern{
+  0%,25%{opacity:0;transform:translateY(10px) scale(.82)}
+  38.6%,95.5%{opacity:1;transform:none}
+  100%{opacity:0;transform:translateY(-4px) scale(.97)}
+}
+@keyframes msd29-depth{
+  0%,56.8%{transform:translateY(0)}
+  65.9%,95.5%{transform:translateY(-150px)}
+  100%{transform:translateY(-130px)}
+}
+@keyframes msd29-phone{
+  0%,65.9%{opacity:0;transform:translate(18px,30px) scale(.9)}
+  77.3%,95.5%{opacity:1;transform:none}
+  100%{opacity:0;transform:translate(12px,20px) scale(.95)}
+}
+@keyframes msd29-before-label{0%,9.5%{opacity:0}11.4%,25%{opacity:1}30%,100%{opacity:0}}
+@keyframes msd29-modern-label{0%,35%{opacity:0}38.6%,65.9%{opacity:1}70%,100%{opacity:0}}
+@keyframes msd29-mobile-label{0%,68%{opacity:0}72%,95.5%{opacity:1}100%{opacity:0}}
+@keyframes msd29-guides{
+  0%,9.5%{opacity:.2;transform:scaleX(.72)}
+  11.4%,24%{opacity:.05;transform:scaleX(.86)}
+  28%,35%{opacity:.24;transform:scaleX(1)}
+  41%,95.5%{opacity:0;transform:scaleX(1)}
+  100%{opacity:.2;transform:scaleX(.72)}
+}
+@keyframes msd29-guide-rule{
+  0%,23%{opacity:0;transform:translateX(0)}
+  27%{opacity:.28}
+  38%{opacity:.08;transform:translateX(360px)}
+  42%,100%{opacity:0;transform:translateX(410px)}
+}
+@keyframes msd29-mountain{
+  0%,12%{opacity:.028}
+  25%,38%{opacity:.04}
+  45%,95.5%{opacity:.014}
+  100%{opacity:.028}
+}
+
+@media(min-width:801px){
+  .signature-prototype .signature-canvas{min-height:clamp(620px,calc(100svh - 76px),680px)}
+  .signature-prototype .signature-content{width:min(58vw,820px);margin-left:clamp(2.5rem,3vw,3.5rem);padding-top:clamp(3.55rem,7vh,4.25rem);padding-bottom:2rem}
+  .signature-prototype .signature-name{margin-bottom:1.9rem}
+  .signature-prototype .signature-copy{max-width:440px;margin-top:1.35rem;line-height:1.58}
+  .signature-prototype .signature-actions{margin-top:1.85rem}
+  .signature-prototype .savages-experience{top:clamp(34px,7%,46px);right:0;width:min(620px,35vw);height:min(560px,calc(100% - 64px));min-height:0;clip-path:inset(-46px 0 -84px 0)}
+  .signature-prototype .savages-experience:before{position:absolute;z-index:0;inset:26px 0 22px;background:linear-gradient(90deg,rgba(73,100,122,.32),rgba(73,100,122,0)) 0 18%/100% 1px no-repeat,linear-gradient(90deg,rgba(183,93,66,.26),rgba(183,93,66,0)) 0 62%/88% 1px no-repeat,linear-gradient(0deg,rgba(73,100,122,.28),rgba(73,100,122,0)) 61% 0/1px 100% no-repeat;content:"";transform-origin:left center;animation:msd29-guides 22s ease-in-out infinite}
+  .signature-prototype .savages-experience:after{position:absolute;z-index:0;top:49%;left:0;width:54px;height:1px;background:#b75d42;content:"";animation:msd29-guide-rule 22s cubic-bezier(.4,0,.2,1) infinite}
+  .signature-prototype .savages-legacy-state{inset:70px 13% 56px 15%;animation:msd29-legacy 22s cubic-bezier(.65,0,.25,1) infinite}
+  .signature-prototype .savages-modern-state{animation:msd29-modern 22s cubic-bezier(.65,0,.25,1) infinite}
+  .signature-prototype .modern-page-track{animation:msd29-depth 22s cubic-bezier(.65,0,.25,1) infinite}
+  .signature-prototype .savages-mobile-state{right:28px;bottom:-18px;width:226px;height:470px;animation:msd29-phone 22s cubic-bezier(.65,0,.25,1) infinite}
+  .signature-prototype .savages-before{animation:msd29-before-label 22s linear infinite}
+  .signature-prototype .savages-after{animation:msd29-modern-label 22s linear infinite}
+  .signature-prototype .savages-mobile-cue{animation:msd29-mobile-label 22s linear infinite}
+  .signature-prototype .mountain-outline{transform:translate(-28px,34px) scale(.82);transform-origin:left top;animation:msd29-mountain 22s ease-in-out infinite}
+}
+
+@media(min-width:1400px){
+  .signature-prototype .savages-experience{width:min(650px,38vw)}
+}
+
+@keyframes msd29-mobile-legacy{
+  0%,20%{opacity:1;transform:none}
+  36%,100%{opacity:0;transform:translateY(-5px) scale(.94)}
+}
+@keyframes msd29-mobile-modern{
+  0%,20%{opacity:0;transform:translateY(12px) scale(.92)}
+  40%,92%{opacity:1;transform:none}
+  100%{opacity:0;transform:translateY(8px) scale(.96)}
+}
+@keyframes msd29-mobile-before{0%,20%{opacity:1}28%,100%{opacity:0}}
+@keyframes msd29-mobile-after{0%,34%{opacity:0}40%,92%{opacity:1}100%{opacity:0}}
+
+@media(max-width:800px){
+  .signature-prototype .signature-content{padding-top:3rem!important}
+  .signature-prototype .signature-actions{margin-top:1.65rem}
+  .signature-prototype .savages-experience{min-height:380px;margin-top:2rem}
+  .signature-prototype .savages-experience:before{display:none}
+  .signature-prototype .savages-legacy-state{animation:msd29-mobile-legacy 10s cubic-bezier(.65,0,.25,1) infinite}
+  .signature-prototype .savages-mobile-state{animation:msd29-mobile-modern 10s cubic-bezier(.65,0,.25,1) infinite}
+  .signature-prototype .savages-before{animation:msd29-mobile-before 10s linear infinite}
+  .signature-prototype .savages-mobile-cue{animation:msd29-mobile-after 10s linear infinite}
+  .signature-prototype .mountain-outline{opacity:.02;transform:translate(-20px,36px) scale(.76);transform-origin:left top;animation:none}
+}
+
+@media(prefers-reduced-motion:reduce) and (min-width:801px){
+  .signature-prototype .savages-experience{overflow:visible}
+  .signature-prototype .savages-experience:before,.signature-prototype .savages-experience:after{display:none}
+  .signature-prototype .savages-legacy-state{inset:auto auto 22px 0;width:318px;height:434px;z-index:6;opacity:1;transform:scale(.68);transform-origin:bottom left;animation:none!important}
+  .signature-prototype .savages-modern-state{inset:0;z-index:2;opacity:1;transform:none;animation:none!important}
+  .signature-prototype .modern-page-track{transform:translateY(-104px);animation:none!important}
+  .signature-prototype .savages-mobile-state{right:20px;bottom:-16px;z-index:7;opacity:1;transform:none;animation:none!important}
+  .signature-prototype .savages-before{display:flex;top:auto;bottom:325px;left:0;opacity:1;animation:none!important}
+  .signature-prototype .savages-after{display:flex;top:-35px;left:auto;right:0;opacity:1;animation:none!important}
+  .signature-prototype .savages-mobile-cue{display:none}
+  .signature-prototype .mountain-outline{opacity:.016;animation:none!important}
+}
+
+@media(prefers-reduced-motion:reduce) and (max-width:800px){
+  .signature-prototype .savages-experience{min-height:430px}
+  .signature-prototype .savages-legacy-state{inset:20px auto auto 0;width:318px;height:434px;z-index:3;opacity:.62;transform:scale(.52);transform-origin:top left;animation:none!important}
+  .signature-prototype .savages-mobile-state{inset:66px 0 0 18%;z-index:4;opacity:1;transform:none;animation:none!important}
+  .signature-prototype .savages-before{display:flex;top:0;left:0;opacity:1;animation:none!important}
+  .signature-prototype .savages-mobile-cue{display:flex;top:42px;left:18%;opacity:1;animation:none!important}
+}
