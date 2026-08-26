@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import { SavagesStudy } from "@/components/savages-study";
 
 const principles = [
   ["01", "Mobile-first", "Built for how customers actually browse today."],
@@ -47,34 +47,13 @@ export function HomepageSections() {
       </div>
     </section>
 
-    <section className="home-proof" aria-labelledby="proof-title">
+    <section className="home-proof home-proof-rebuild" aria-labelledby="proof-title">
       <div className="wrap">
-        <div className="home-proof-heading">
-          <div><p className="home-kicker">THE TRANSFORMATION, STUDIED</p><h2 id="proof-title">See the difference a refresh can make.</h2></div>
-          <p>We don&apos;t believe you need to start over just because your website needs to catch up.</p>
-        </div>
-        <div className="proof-desktop" aria-label="Savages Fly Gear before and after desktop comparison">
-          <div className="proof-legacy">
-            <div className="proof-label"><span>BEFORE</span><small>Existing / legacy site</small></div>
-            <div className="legacy-proof-frame">
-              <div className="legacy-proof-nav"><b>SAVAGES FLY GEAR</b><span>Home　Flies　Gear　About</span></div>
-              <div className="legacy-proof-hero"><Image src="/assets/savages-trout.jpg" alt="Legacy Savages Fly Gear home page" fill sizes="(max-width: 800px) 90vw, 34vw" /><div><b>Savages Fly Gear</b><span>Streamer flies and gear for serious anglers.</span><i>View Our Flies</i></div></div>
-              <div className="legacy-proof-columns"><span>Welcome to Savages</span><span>Featured Flies</span><span>Latest from the River</span></div>
-            </div>
-          </div>
-          <div className="proof-arrow">→</div>
-          <div className="proof-modern">
-            <div className="proof-label"><span>AFTER</span><small>Modern MSD redesign</small></div>
-            <div className="modern-proof-frame">
-              <div className="modern-proof-nav"><b>SAVAGES<small>FLY GEAR</small></b><span>FLIES　 GEAR　 STORIES　 ABOUT</span></div>
-              <div className="modern-proof-content"><div className="modern-proof-image"><Image src="/assets/savages-trout.jpg" alt="Modern Savages Fly Gear home page" fill sizes="(max-width: 800px) 90vw, 48vw" /></div><div><p>STREAMER-FOCUSED FLY GEAR</p><h3>CHASE BIG FISH.<br />THROW BIG FLIES.</h3><span>Built for anglers who hunt the fish worth remembering.</span><i>SHOP GEAR <Arrow /></i></div></div>
-            </div>
-          </div>
-        </div>
-        <div className="proof-mobile-row">
-          <div className="proof-phone proof-phone-old"><p>BEFORE / MOBILE</p><b>SAVAGES<br />FLY GEAR</b><Image src="/assets/savages-trout.jpg" alt="Legacy Savages mobile view" fill sizes="150px" /><span>Old layout.<br />Small actions.</span></div>
-          <p>Same business.<br /><em>Same character.</em><br />Better experience.</p>
-          <div className="proof-phone proof-phone-new"><p>AFTER / MOBILE</p><b>SAVAGES<small>FLY GEAR</small></b><Image src="/assets/savages-trout.jpg" alt="Modern Savages mobile view" fill sizes="150px" /><span>CHASE BIG FISH.<br />THROW BIG FLIES.</span><i>SHOP GEAR</i></div>
+        <div className="proof-rebuild-heading"><p className="home-kicker">THE TRANSFORMATION</p><h2 id="proof-title">Same business. <em>Better digital experience.</em></h2><p>We kept the recognizable Savages character and core content, then rebuilt the experience around clearer hierarchy, stronger imagery, and mobile-first behavior.</p></div>
+        <div className="proof-rebuild-stage">
+          <article className="proof-rebuild-legacy"><div className="proof-rebuild-label"><span>BEFORE</span><small>Legacy desktop</small></div><div className="proof-legacy-viewport"><SavagesStudy kind="legacy" embedded/></div></article>
+          <div className="proof-rebuild-arrow" aria-label="Legacy website modernized into a new digital experience">→</div>
+          <article className="proof-rebuild-modern"><div className="proof-rebuild-label"><span>MODERNIZED</span><small>Modern desktop</small></div><div className="proof-modern-viewport"><SavagesStudy kind="modern" embedded/></div><div className="proof-modern-phone"><span>MOBILE FIRST</span><div><SavagesStudy kind="mobile" embedded/></div></div></article>
         </div>
       </div>
     </section>
