@@ -8,6 +8,8 @@
 @import "./pricing.css";
 @import "./pricing-spacing.css";
 @import "./homepage-section-polish.css";
+@import "./homepage-proof-rebuild.css";
+@import "./homepage-proof-mobile-fix.css";
 @import "tailwindcss";
 
 /* Homepage Refinement 1: transition from the approved hero into modernization. */
