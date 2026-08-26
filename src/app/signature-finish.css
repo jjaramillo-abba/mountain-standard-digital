@@ -94,8 +94,8 @@
 @media(prefers-reduced-motion:reduce) and (min-width:801px){.signature-prototype .savages-experience{width:440px}.signature-prototype .savages-modern-state{opacity:1;transform:scale(1.25);transform-origin:top right}.signature-prototype .modern-page-track{transform:translateY(-212px);animation:none!important}.signature-prototype .savages-mobile-state{opacity:1;transform:none;animation:none!important}.signature-prototype .savages-legacy-state{opacity:.25;transform:scale(.82) translateX(-45%);animation:none!important}}
 
 /* Focused visual refinement: a single fixed stage makes the transformation read at first glance. */
-@keyframes showcase-legacy { 0%,24%{opacity:1;transform:none} 31%,93%{opacity:0;transform:translate(-18px,-9px) scale(.82)} 97%,100%{opacity:1;transform:none} }
-@keyframes showcase-modern { 0%,25%{opacity:0;transform:translate(32px,18px) scale(.88)} 32%,95%{opacity:1;transform:none} 100%{opacity:0;transform:translate(-24px,12px) scale(.96)} }
+@keyframes showcase-legacy { 0%,24%{opacity:1;transform:none} 31%,93%{opacity:0;transform:scale(.82)} 97%,100%{opacity:1;transform:none} }
+@keyframes showcase-modern { 0%,25%{opacity:0;transform:scale(.88)} 32%,95%{opacity:1;transform:none} 100%{opacity:0;transform:scale(.96)} }
 @keyframes showcase-page-depth { 0%,52%{transform:translateY(0)} 62%,95%{transform:translateY(-158px)} 100%{transform:translateY(-158px)} }
 @keyframes showcase-phone { 0%,67%{opacity:0;transform:translate(32px,36px) scale(.86)} 74%,95%{opacity:1;transform:none} 100%{opacity:0;transform:translate(32px,36px) scale(.86)} }
 @keyframes showcase-before-label { 0%,10%{opacity:0} 12%,24%{opacity:1} 29%,100%{opacity:0} }
@@ -104,11 +104,11 @@
 
 @media(min-width:801px){
   .signature-prototype .signature-canvas{min-height:720px}
-  .signature-prototype .signature-content{padding-top:4.8rem;padding-bottom:3rem}
+  .signature-prototype .signature-content{width:calc(64vw - 2.5rem);max-width:none;margin-left:clamp(2.5rem,3vw,3.5rem);padding-top:4.8rem;padding-bottom:3rem}
   .signature-prototype .signature-name{margin-bottom:2.15rem}.signature-prototype .signature-name:after{margin-top:.72rem}
   .signature-prototype .signature-copy{margin-top:1.45rem;line-height:1.62}
   .signature-prototype .signature-actions{margin-top:2.05rem}.signature-prototype .signature-secondary{display:inline-flex;align-items:center;min-height:48px}
-  .signature-prototype .savages-experience{position:absolute;top:10%;right:0;width:min(630px,44vw);min-height:590px;height:590px;color:#f5eedc}
+  .signature-prototype .savages-experience{position:absolute;top:10%;right:0;width:min(660px,36vw);min-height:590px;height:590px;color:#f5eedc;clip-path:inset(-48px 0 -110px 0);isolation:isolate}
   .signature-prototype .savages-cue{top:-39px;left:0;z-index:8;display:flex;align-items:center;gap:10px;color:#b75d42;font-size:12px;font-weight:800;letter-spacing:.18em;line-height:1}
   .signature-prototype .savages-cue:before{width:23px;height:2px;background:#b75d42;content:""}
   .signature-prototype .savages-before{animation:showcase-before-label 21s linear infinite}.signature-prototype .savages-after{animation:showcase-modern-label 21s linear infinite}.signature-prototype .savages-mobile-cue{animation:showcase-mobile-label 21s linear infinite}
