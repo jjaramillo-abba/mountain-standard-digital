@@ -3,5 +3,5 @@ import { HomepageSections } from "@/components/homepage-sections";
 import { Footer } from "@/components/site-shell";
 
 export default function Home() {
-  return <><SignatureHero /><HomepageSections /><Footer /></>;
+  return <div className="homepage-root"><SignatureHero /><HomepageSections /><Footer /></div>;
 }
