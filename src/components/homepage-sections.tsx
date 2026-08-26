@@ -17,10 +17,10 @@ const inclusions = [
 ];
 
 const steps = [
-  ["01", "Show us your site", "We'll review what you have and talk through what you want to improve."],
-  ["02", "We refresh it", "We redesign the experience around modern desktop and mobile standards."],
-  ["03", "You review it", "See the new site before anything changes on your current website."],
-  ["04", "We launch it", "Once you approve it, we'll take care of getting the new experience online."],
+  ["01", "Show us your site", "We review what you have, what still works, and what you want to improve."],
+  ["02", "Agree on the direction", "We confirm what stays, what changes, and the scope before we build."],
+  ["03", "Review the new site", "See the modernized experience before anything changes on your current website."],
+  ["04", "Go live", "Once you approve it, we handle the launch and get the new experience online."],
 ];
 
 function Arrow() {
@@ -65,8 +65,9 @@ export function HomepageSections() {
     </section>
 
     <section className="home-process" aria-labelledby="process-title">
-      <div className="wrap"><div className="home-section-lead compact"><p className="home-kicker">HOW IT WORKS</p><h2 id="process-title">From outdated to updated.<br />Without the hassle.</h2></div>
+      <div className="wrap"><div className="home-section-lead compact"><p className="home-kicker">HOW IT WORKS</p><h2 id="process-title">A clear path to a better website.</h2></div>
         <div className="process-steps">{steps.map(([number, title, copy]) => <article key={number}><span>{number}</span><h3>{title}</h3><p>{copy}</p></article>)}</div>
+        <Link className="process-cta focus-ring" href="/how-it-works">See How It Works <span aria-hidden="true">→</span></Link>
       </div>
     </section>
 

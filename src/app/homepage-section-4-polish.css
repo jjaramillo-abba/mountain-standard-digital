@@ -1,0 +1,7 @@
+/* Homepage section 4: a concise, evenly weighted process preview. */
+.home-process .home-section-lead h2{max-width:760px}
+.process-steps article:nth-child(3){background:transparent}
+.process-cta{display:inline-flex;align-items:center;gap:.8rem;margin-top:2.4rem;padding:.65rem 0;border-bottom:1px solid rgba(23,25,28,.58);font-size:.8rem;font-weight:700}
+.process-cta span{color:var(--canyon);font-size:1rem;transition:transform .2s ease}
+.process-cta:hover span{transform:translateX(3px)}
+@media(max-width:800px){.process-cta{margin-top:2rem}}
