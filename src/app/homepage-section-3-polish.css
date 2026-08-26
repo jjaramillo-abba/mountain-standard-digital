@@ -1,0 +1,13 @@
+/* Homepage section 3: core inclusions are intentionally practical and concise. */
+.home-includes{padding:7rem 0}
+.home-includes-grid{gap:4.5rem 7rem}
+.home-includes h2{max-width:550px}
+.includes-list{margin:0;padding:0;border-top:1px solid rgba(23,25,28,.2);list-style:none}
+.includes-list li{display:grid;grid-template-columns:2.5rem minmax(0,1fr);gap:.85rem;padding:1.05rem 0 1.1rem;border-bottom:1px solid rgba(23,25,28,.15)}
+.includes-list>li>span{padding-top:.22rem;color:var(--canyon);font-size:.65rem;font-weight:700;letter-spacing:.1em}
+.includes-list h3{margin:0;font-size:1.02rem;font-weight:600;line-height:1.18}
+.includes-list p{max-width:440px;margin:.35rem 0 0;color:rgba(23,25,28,.66);font-size:.88rem;line-height:1.55}
+.includes-closing{grid-column:1/-1;max-width:820px;margin-top:.15rem;padding-top:1.8rem;border-top:2px solid var(--canyon)}
+.includes-closing p{max-width:700px;margin:0;font-family:Outfit,Inter,sans-serif;font-size:clamp(1.45rem,2.55vw,2.4rem);font-weight:500;line-height:1.06;letter-spacing:-.045em}
+.includes-closing span{display:block;max-width:670px;margin-top:.9rem;color:rgba(23,25,28,.67);font-size:.94rem;line-height:1.65}
+@media(max-width:800px){.home-includes{padding:5.2rem 0}.home-includes-grid{gap:3rem}.includes-list li{grid-template-columns:2.15rem minmax(0,1fr);gap:.7rem;padding:1rem 0 1.05rem}.includes-list h3{font-size:1rem}.includes-list p{font-size:.86rem}.includes-closing{margin-top:0;padding-top:1.5rem}.includes-closing p{font-size:1.55rem}.includes-closing span{font-size:.9rem;line-height:1.6}}
