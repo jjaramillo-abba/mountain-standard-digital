@@ -72,12 +72,12 @@ export function HomepageSections() {
     </section>
 
     <section className="home-pricing" aria-labelledby="pricing-title">
-      <div className="wrap"><div className="pricing-intro"><p className="home-kicker">STRAIGHTFORWARD PRICING</p><h2 id="pricing-title">A clear path to a better website.</h2><p>One focused refresh, followed by care when you need it.</p></div>
-        <div className="pricing-offers">
-          <article className="pricing-primary"><p>WEBSITE REFRESH</p><h3>Starting at <strong>$500</strong></h3><span>Modernize your existing small-business website with a professional, mobile-friendly experience.</span><ul><li>Design refresh</li><li>Mobile optimization</li><li>Content migration</li><li>Contact functionality</li><li>Launch support</li></ul><Link href="/contact">Start My Refresh <Arrow /></Link></article>
-          <article className="pricing-care"><p>HOSTING &amp; CARE</p><h3><strong>$50</strong><small>/month</small></h3><span>Keep the new experience fast, current, and looked after.</span><ul><li>Secure managed hosting</li><li>Website maintenance</li><li>Routine updates</li><li>Performance monitoring</li><li>Support</li></ul></article>
+      <div className="wrap price-preview"><div className="price-preview-intro"><p className="home-kicker">STRAIGHTFORWARD PRICING</p><h2 id="pricing-title">Simple pricing.<br /><em>No surprises.</em></h2><p>Straightforward sites start here. If your website needs more, we define the scope and price before work begins.</p></div>
+        <div className="price-preview-offers">
+          <article><p>01 / WEBSITE MODERNIZATION</p><h3>Starting at $500</h3><span>Focused modernization of an established small-business website.</span></article>
+          <article><p>02 / HOSTING &amp; MAINTENANCE</p><h3>$50 <small>/ month</small></h3><span>Managed hosting and ongoing site care after launch.</span></article>
         </div>
-        <p className="pricing-note">Pricing applies to standard informational small-business websites. We&apos;ll confirm scope and pricing before work begins.</p>
+        <div className="price-preview-footer"><p>More complex site? We scope it before we build it.</p><Link className="price-preview-cta focus-ring" href="/pricing">See Pricing <span aria-hidden="true">→</span></Link></div>
       </div>
     </section>
 
