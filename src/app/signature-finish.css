@@ -190,3 +190,19 @@
 .signature-prototype .savages-mobile-state h2{margin-top:11px;font-size:1.94rem;line-height:.87;letter-spacing:-.025em}
 .signature-prototype .savages-mobile-state>span{margin-top:11px;font-size:7.5px;line-height:1.5}
 .signature-prototype .savages-mobile-state button{align-self:stretch;min-height:31px;margin-top:14px;padding:9px 10px;text-align:center}
+
+/* Sprint 2C.8: numbered editorial navigation with one restrained moving rule. */
+@media(min-width:801px){
+  .signature-prototype .modern-mini-head nav{position:relative;display:grid;grid-template-columns:repeat(4,44px);gap:8px;margin-left:auto;padding:0 0 8px}
+  .signature-prototype .modern-mini-head nav button{display:flex;align-items:center;gap:3px;min-width:0;margin:0;padding:0;border:0;background:none;color:rgba(245,238,220,.78);font:400 8.5px/1 Impact,Outfit,sans-serif;letter-spacing:.1em;white-space:nowrap;cursor:pointer;transition:color .18s ease,opacity .18s ease}
+  .signature-prototype .modern-mini-head nav button em{color:rgba(232,188,37,.74);font:400 7px/1 Impact,Outfit,sans-serif;letter-spacing:.06em;transition:color .18s ease}
+  .signature-prototype .modern-mini-head nav button.is-active{color:#e8bc25}
+  .signature-prototype .modern-mini-head nav:after{position:absolute;bottom:0;left:0;width:18px;height:2px;background:#e8bc25;content:"";transition:transform .2s cubic-bezier(.4,0,.2,1),width .2s ease}
+  .signature-prototype .modern-mini-head nav:has(button:nth-child(2):hover,button:nth-child(2):focus-visible):after{transform:translateX(52px)}
+  .signature-prototype .modern-mini-head nav:has(button:nth-child(3):hover,button:nth-child(3):focus-visible):after{transform:translateX(104px)}
+  .signature-prototype .modern-mini-head nav:has(button:nth-child(4):hover,button:nth-child(4):focus-visible):after{transform:translateX(156px)}
+  .signature-prototype .modern-mini-head nav button:hover,.signature-prototype .modern-mini-head nav button:focus-visible{color:#e8bc25;outline:none}
+  .signature-prototype .modern-mini-head nav button:hover em,.signature-prototype .modern-mini-head nav button:focus-visible em{color:#e8bc25}
+  .signature-prototype .modern-mini-head nav:has(button:not(.is-active):hover,button:not(.is-active):focus-visible) .is-active{color:rgba(245,238,220,.78)}
+  .signature-prototype .modern-mini-head img{margin-left:16px}
+}
