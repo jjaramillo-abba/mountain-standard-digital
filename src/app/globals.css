@@ -5,6 +5,9 @@
 @import "./savages-study.css";
 @import "./homepage-complete.css";
 @import "./website-modernization.css";
+@import "./pricing.css";
+@import "./pricing-spacing.css";
+@import "./homepage-section-polish.css";
 @import "tailwindcss";
 
 /* Homepage Refinement 1: transition from the approved hero into modernization. */
