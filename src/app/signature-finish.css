@@ -126,6 +126,6 @@
 /* Permanent hero artwork — deliberately outside the animated Savages showcase. */
 .signature-prototype .signature-geometry{position:absolute!important;inset:0!important;z-index:0!important;display:block!important;order:initial!important;height:auto!important;margin:0!important;overflow:hidden!important;pointer-events:none}
 .signature-prototype .signature-geometry svg{display:block;width:100%!important;height:100%!important;margin:0!important}
-.signature-prototype .mountain-ridges{fill:none;stroke:#b75d42;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.1}
-.signature-prototype .mountain-ridges .ridge-far{opacity:.1}.signature-prototype .mountain-ridges .ridge-mid{opacity:.13}.signature-prototype .mountain-ridges .ridge-near{opacity:.17}.signature-prototype .mountain-ridges .ridge-accent{opacity:.12}
+.signature-prototype .mountain-ridges{fill:none;stroke:#b75d42;stroke-linecap:round;stroke-linejoin:round}
+.signature-prototype .mountain-ridges .ridge-distant{opacity:.065;stroke-width:1.25}.signature-prototype .mountain-ridges .ridge-middle{opacity:.1;stroke-width:1.6}.signature-prototype .mountain-ridges .ridge-foreground{opacity:.145;stroke-width:2.05}
 @media(max-width:800px){.signature-prototype .signature-geometry{position:absolute!important;inset:0!important;height:auto!important;margin:0!important}.signature-prototype .signature-geometry svg{width:185%!important;height:100%!important;margin-left:-62%!important}.signature-prototype .mountain-ridges{stroke-width:2.5}}
