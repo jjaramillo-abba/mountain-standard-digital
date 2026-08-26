@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 const principles = [
-  ["01", "Modern on every screen", "Designed for the way customers actually browse today."],
-  ["02", "Built around your business", "We keep what makes your company recognizable while improving what doesn't work."],
-  ["03", "Simple and affordable", "Professional website modernization without a traditional agency-sized project."],
+  ["01", "Mobile-first", "Built for how customers actually browse today."],
+  ["02", "Built around your business", "Keep what makes your company recognizable. Improve the experience around it."],
+  ["03", "Straightforward", "Professional website modernization without turning it into a giant agency engagement."],
 ];
 
 const inclusions = [
@@ -31,18 +31,19 @@ function Arrow() {
 
 export function HomepageSections() {
   return <div className="homepage-complete">
-    <section className="home-problem" aria-labelledby="problem-title">
-      <div className="wrap">
-        <div className="home-section-lead">
-          <p className="home-kicker">A WEBSITE SHOULD KEEP UP</p>
-          <h2 id="problem-title">Your business has moved forward.<br />Your website should too.</h2>
-          <p>A dated website can make a great local business look dated too — especially on a phone. Mountain Standard Digital refreshes existing small-business websites with modern design, better mobile experiences, and clearer customer journeys without turning the project into a months-long rebuild.</p>
+    <section className="home-modernization" aria-labelledby="modernization-title">
+      <div className="wrap modernization-shell">
+        <div className="modernization-intro">
+          <p className="home-kicker">WEBSITE MODERNIZATION / 01</p>
+          <h2 id="modernization-title">A better website starts with what already works.</h2>
+          <p>We keep what customers already recognize about your business, then modernize how they experience it — especially on mobile.</p>
         </div>
-        <div className="home-principles">
+        <div className="modernization-principles">
           {principles.map(([number, title, copy]) => <article key={number}>
-            <span>{number}</span><h3>{title}</h3><p>{copy}</p>
+            <span>{number}</span><div><h3>{title}</h3><p>{copy}</p></div>
           </article>)}
         </div>
+        <Link className="modernization-cta focus-ring" href="/website-modernization">Explore Website Modernization <span aria-hidden="true">→</span></Link>
       </div>
     </section>
 
