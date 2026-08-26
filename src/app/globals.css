@@ -13,6 +13,10 @@
 :root { --ink:#17191c; --cream:#f5f1e8; --blue:#49647a; --sky:#dde8ee; --canyon:#b75d42; }
 * { box-sizing:border-box; } html { scroll-behavior:smooth; } body { margin:0; background:var(--cream); color:var(--ink); font-family:Inter,Arial,sans-serif; } a { color:inherit; text-decoration:none; } ::selection { background:#b8c9d2; }
 .display { font-family:Outfit,Inter,sans-serif; letter-spacing:-.055em; }.eyebrow { font-size:.7rem; letter-spacing:.16em; font-weight:700; color:var(--blue); }.wrap { width:min(1180px,calc(100% - 3rem)); margin:0 auto; }.gridline { background-image:linear-gradient(rgba(23,25,28,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(23,25,28,.06) 1px,transparent 1px); background-size:28px 28px; }.focus-ring:focus-visible { outline:3px solid var(--canyon); outline-offset:3px; }
+
+/* Approved MSD lockup, shared by the homepage and every secondary page. */
+.msd-wordmark { gap:.24rem; align-items:center; }.msd-mark { width:76px; height:46px; overflow:visible; border-radius:0; background:transparent; }.msd-monogram-original { object-fit:contain; opacity:1; }.msd-full-logo { display:block; width:164px; height:50px; margin-left:-1rem; overflow:hidden; transform:translateY(-1px); }
+@media (max-width:800px) { .msd-wordmark { gap:.2rem; }.msd-mark { width:67px; height:40px; }.msd-full-logo { width:132px; height:42px; margin-left:-.85rem; transform:translateY(-1px); } }
 @keyframes rise { from { opacity:0;transform:translateY(14px) } to { opacity:1;transform:translateY(0) } }.rise { animation:rise .7s both; }.rise-d2 { animation-delay:.14s; } @media (prefers-reduced-motion:reduce) { *,*:before,*:after { animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important; } }
 
 /* Sprint 2C: a single spatial system resolving into a mobile digital experience */
