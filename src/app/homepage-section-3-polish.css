@@ -1,6 +1,6 @@
 /* Homepage section 3: core inclusions are intentionally practical and concise. */
 .home-includes{padding:7rem 0}
-.home-includes-grid{gap:4.5rem 7rem}
+.home-includes-grid{row-gap:.75rem;column-gap:7rem}
 .home-includes h2{max-width:550px}
 .includes-list{margin:0;padding:0;border-top:1px solid rgba(23,25,28,.2);list-style:none}
 .includes-list li{display:grid;grid-template-columns:2.5rem minmax(0,1fr);gap:.85rem;padding:1.05rem 0 1.1rem;border-bottom:1px solid rgba(23,25,28,.15)}

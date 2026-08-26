@@ -8,8 +8,8 @@ const principles = [
 ];
 
 const inclusions = [
-  ["Modern responsive design", "A current visual experience built around your existing brand."],
-  ["Mobile-first layout", "Designed for the screens your customers actually use."],
+  ["Modern visual design", "A current visual experience built around your existing brand."],
+  ["Mobile-first responsive build", "Designed to work naturally across the screens your customers actually use."],
   ["Clear navigation and hierarchy", "Make important information easier to find and act on."],
   ["Existing content carried forward", "Keep useful copy, photography, and brand assets where they still work."],
   ["A clear contact path", "Calls to action and a contact form where appropriate."],
