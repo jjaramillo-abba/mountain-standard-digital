@@ -8,14 +8,12 @@ const principles = [
 ];
 
 const inclusions = [
-  "Modern visual refresh",
-  "Mobile-first responsive design",
-  "Navigation and usability improvements",
-  "Existing content migration and cleanup",
-  "Updated calls to action",
-  "Contact and appointment integrations where appropriate",
-  "Performance optimization and basic search setup",
-  "Launch and deployment",
+  ["Modern visual design", "A current visual experience built around your existing brand."],
+  ["Mobile-first responsive build", "Designed to work naturally across the screens your customers actually use."],
+  ["Clear navigation and hierarchy", "Make important information easier to find and act on."],
+  ["Existing content carried forward", "Keep useful copy, photography, and brand assets where they still work."],
+  ["A clear contact path", "Calls to action and a contact form where appropriate."],
+  ["Launch-ready fundamentals", "Performance, accessibility, migration, and deployment considered as part of the build."],
 ];
 
 const steps = [
@@ -60,9 +58,9 @@ export function HomepageSections() {
 
     <section className="home-includes" aria-labelledby="includes-title">
       <div className="wrap home-includes-grid">
-        <div><p className="home-kicker">WHAT YOU GET</p><h2 id="includes-title">A professional website refresh without the agency overhead.</h2></div>
-        <div className="includes-list">{inclusions.map((item, index) => <p key={item}><span>{String(index + 1).padStart(2, "0")}</span>{item}</p>)}</div>
-        <blockquote>We work with your existing business, content, photos, and brand. The goal isn&apos;t to turn you into somebody else. It&apos;s to make the business you&apos;ve already built look as good online as it does in person.</blockquote>
+        <div><p className="home-kicker">WHAT YOU GET</p><h2 id="includes-title">The essentials of a modern website.<br />Done right.</h2></div>
+        <ol className="includes-list">{inclusions.map(([title, description], index) => <li key={title}><span>{String(index + 1).padStart(2, "0")}</span><div><h3>{title}</h3><p>{description}</p></div></li>)}</ol>
+        <div className="includes-closing"><p>Keep what makes your business yours. Modernize the experience around it.</p><span>We build from the brand, content, photography, and customer recognition you already have whenever they still serve the business.</span></div>
       </div>
     </section>
 
