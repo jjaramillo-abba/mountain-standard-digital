@@ -17,9 +17,9 @@ function ResolvedExperience() {
       <div className="legacy-mini-head"><Image src="/assets/savages-logo.png" alt="Savages Fly Gear" width={46} height={46}/><b>SAVAGES FLY GEAR</b><span>Home　 Flies　 Gear　 About　 Contact</span><i>Search</i></div>
       <div className="legacy-mini-hero"><Image src="/assets/savages-trout.jpg" alt="Brown trout and streamer fly" fill sizes="31vw"/><div><strong>Savages Fly Gear</strong><small>Streamer flies and gear for serious anglers.</small><button type="button">View Our Flies</button></div></div>
       <div className="legacy-mini-columns">
-        <article><Image src="/assets/savages-last-cast.jpg" alt="Angler fishing at the river" width={180} height={96}/><h3>Welcome to Savages</h3><p>Savages Fly Gear is built for anglers who fish big water and throw big flies. Everything here is made with serious fishing in mind.</p><a href="/savages-legacy">Learn More »</a></article>
-        <article><Image src="/assets/savages-flies.jpg" alt="Streamer flies in fly boxes" width={180} height={96}/><h3>Featured Flies</h3><p><b>Yellow Dungeon</b><br/>Proven streamer patterns tied for long casts and hard takes.</p><a href="/savages-legacy">View All Flies »</a></article>
-        <article><Image src="/assets/savages-trout.jpg" alt="Brown trout caught on a streamer" width={180} height={96}/><h3>Latest from the River</h3><small>October 14, 2016</small><p>Five tips for fishing streamers when the water starts to cool.</p><a href="/savages-legacy">Read More »</a></article>
+        <article><h3>Welcome to Savages</h3><p>Savages Fly Gear is built for anglers who fish big water and throw big flies. From proven streamer patterns to the gear we use ourselves, everything here is made with serious fishing in mind.</p><a href="/savages-legacy">Learn More »</a></article>
+        <article><h3>Featured Flies</h3><p><b>Yellow Dungeon &amp; Olive Sculpin</b><br/>These proven streamer patterns are tied for long casts and hard takes. See what is currently available in the fly shop.</p><a href="/savages-legacy">View All Flies »</a></article>
+        <article><h3>Latest from the River</h3><small>October 14, 2016</small><p>Five tips for fishing streamers when the water starts to cool. A few simple adjustments can make a slow fall day productive.</p><a href="/savages-legacy">Read More »</a></article>
       </div>
       <footer className="legacy-mini-footer"><span>Home | Flies | Gear | About | Contact</span><span>© Savages Fly Gear · Built for streamer anglers.</span></footer>
     </div>
