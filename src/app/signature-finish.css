@@ -153,3 +153,40 @@
   .signature-prototype .legacy-mini-columns a{font-size:5.7px}
   .signature-prototype .legacy-mini-footer{height:20px;font-size:5px}
 }
+
+/* Premium Savages finish: one cohesive brand system from desktop through mobile. */
+@media(min-width:801px){
+  .signature-prototype .modern-mini-head{height:72px;padding:0 24px;background:#10130f}
+  .signature-prototype .modern-mini-head>div{gap:0;line-height:.74}
+  .signature-prototype .modern-mini-head b{font-size:27px;letter-spacing:.055em}
+  .signature-prototype .modern-mini-head small{margin-top:7px;font-size:6.5px;letter-spacing:.38em}
+  .signature-prototype .modern-mini-head nav{display:flex;align-items:center;gap:15px;margin-left:auto;font-size:8.5px;letter-spacing:.1em;white-space:nowrap}
+  .signature-prototype .modern-mini-head img{width:36px;height:36px;margin-left:17px}
+  .signature-prototype .modern-mini-body{height:418px;grid-template-columns:1.14fr .86fr}
+  .signature-prototype .modern-mini-image img{object-position:40% 50%}
+  .signature-prototype .modern-mini-copy{justify-content:center;padding:29px 27px 27px;background:#191d17}
+  .signature-prototype .modern-mini-copy p{font-size:7.5px;line-height:1.35;letter-spacing:.17em}
+  .signature-prototype .modern-mini-copy h2{margin-top:17px;font-size:1.62rem;line-height:.88;letter-spacing:-.035em}
+  .signature-prototype .modern-mini-copy>span{margin-top:18px;font-size:9px;line-height:1.62}
+  .signature-prototype .modern-mini-copy div{align-items:center;gap:14px;margin-top:24px}
+  .signature-prototype .modern-mini-copy button{min-height:34px;padding:10px 15px;font-size:7.5px;letter-spacing:.055em;white-space:nowrap}
+  .signature-prototype .modern-mini-copy i{color:rgba(245,238,220,.58);font-size:7px;font-weight:700;letter-spacing:.025em;white-space:nowrap}
+  .signature-prototype .modern-editorial{box-sizing:border-box;border-top:4px solid #e8bc25;background:#536638}
+  .signature-prototype .modern-editorial-image img{object-position:center 42%}
+  .signature-prototype .modern-editorial>div:last-child{justify-content:flex-start;padding:30px 30px}
+  .signature-prototype .modern-editorial p{font-size:7.5px;letter-spacing:.16em}
+  .signature-prototype .modern-editorial h2{margin-top:14px;font-size:2rem;line-height:.86}
+}
+
+.signature-prototype .mobile-mini-head{height:46px;padding-top:2px}
+.signature-prototype .mobile-mini-head>div{gap:0;line-height:.74}
+.signature-prototype .mobile-mini-head b{font-size:21px;letter-spacing:.045em}
+.signature-prototype .mobile-mini-head small{margin-top:6px;font-size:5px;letter-spacing:.34em}
+.signature-prototype .mobile-mini-head img{width:31px;height:31px;margin-left:auto}
+.signature-prototype .mobile-mini-head strong{margin-left:8px;color:#e8bc25;font-size:6.5px;letter-spacing:.1em}
+.signature-prototype .mobile-mini-image{height:128px;margin-top:13px;margin-bottom:16px}
+.signature-prototype .mobile-mini-image img{object-position:46% 50%}
+.signature-prototype .savages-mobile-state>p{font-size:6.5px;line-height:1.35;letter-spacing:.16em}
+.signature-prototype .savages-mobile-state h2{margin-top:11px;font-size:1.94rem;line-height:.87;letter-spacing:-.025em}
+.signature-prototype .savages-mobile-state>span{margin-top:11px;font-size:7.5px;line-height:1.5}
+.signature-prototype .savages-mobile-state button{align-self:stretch;min-height:31px;margin-top:14px;padding:9px 10px;text-align:center}
