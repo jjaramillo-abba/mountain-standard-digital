@@ -126,13 +126,13 @@
 }
 @media(prefers-reduced-motion:reduce) and (min-width:801px){.signature-prototype .savages-legacy-state{opacity:.35;transform:scale(.72) translate(-30%,9%);animation:none!important}.signature-prototype .savages-modern-state{opacity:1;transform:none;animation:none!important}.signature-prototype .modern-page-track{transform:translateY(-158px);animation:none!important}.signature-prototype .savages-mobile-state{opacity:1;transform:none;animation:none!important}.signature-prototype .savages-cue{display:none}}
 
-/* Permanent hero artwork — deliberately outside the animated Savages showcase. */
+/* Permanent hero artwork, deliberately outside the animated Savages showcase. */
 .signature-prototype .signature-geometry{position:absolute!important;inset:0!important;z-index:0!important;display:block!important;order:initial!important;height:auto!important;margin:0!important;overflow:hidden!important;pointer-events:none}
 .signature-prototype .signature-geometry svg{display:block;width:100%!important;height:100%!important;margin:0!important}
 .signature-prototype .mountain-outline{opacity:.06}
 @media(max-width:800px){.signature-prototype .signature-geometry{position:absolute!important;inset:0!important;height:auto!important;margin:0!important}.signature-prototype .signature-geometry svg{width:185%!important;height:100%!important;margin-left:-62%!important}.signature-prototype .mountain-ridges{stroke-width:2.5}}
 
-/* Credible legacy homepage content — intentionally dense, square, and desktop-first. */
+/* Credible legacy homepage content, intentionally dense, square, and desktop-first. */
 .signature-prototype .legacy-mini-hero{height:205px}
 .signature-prototype .legacy-mini-hero div{top:48px}
 .signature-prototype .legacy-mini-columns{height:142px;box-sizing:border-box;gap:5px;padding:7px;border-top:1px solid #a89b7c;background:#dfd3b8}

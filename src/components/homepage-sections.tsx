@@ -10,7 +10,7 @@ const principles = [
 const inclusions = [
   ["Modern visual design", "A current visual experience built around your existing brand."],
   ["Mobile-first responsive build", "Designed to work naturally across the screens your customers actually use."],
-  ["Clear navigation and contact paths", "Make important information easy to find—and make the next step obvious."],
+  ["Clear navigation and contact paths", "Make important information easy to find, and make the next step obvious."],
   ["Existing content carried forward", "Keep useful copy, photography, and brand assets where they still work."],
   ["Launch-ready fundamentals", "Performance, accessibility, migration, and deployment considered as part of the build."],
 ];
@@ -29,7 +29,7 @@ export function HomepageSections() {
         <div className="modernization-intro">
           <p className="home-kicker">WEBSITE MODERNIZATION / 01</p>
           <h2 id="modernization-title">A better website starts with what already works.</h2>
-          <p>We keep what customers already recognize about your business, then modernize how they experience it — especially on mobile.</p>
+          <p>We keep what customers already recognize about your business, then modernize how they experience it, especially on mobile.</p>
         </div>
         <div className="modernization-principles">
           {principles.map(([number, title, copy]) => <article key={number}>
@@ -70,7 +70,7 @@ export function HomepageSections() {
           <article><p>01 / WEBSITE MODERNIZATION</p><h3>Starting at $500</h3><span>Focused modernization of an established small-business website.</span></article>
           <article><p>02 / HOSTING &amp; MAINTENANCE</p><h3>$50 <small>/ month</small></h3><span>Managed hosting and ongoing site care after launch.</span></article>
         </div>
-        <div className="price-preview-footer"><p>Need something more—or starting from scratch? We’ll scope it with you before we build it.</p><Link className="price-preview-cta focus-ring" href="/pricing">See Pricing <span aria-hidden="true">→</span></Link></div>
+        <div className="price-preview-footer"><p>Need something more or starting from scratch? We’ll scope it with you before we build it.</p><Link className="price-preview-cta focus-ring" href="/pricing">See Pricing <span aria-hidden="true">→</span></Link></div>
       </div>
     </section>
 
@@ -80,7 +80,7 @@ export function HomepageSections() {
     </section>
 
     <section className="home-final-cta" aria-labelledby="final-title">
-      <div className="wrap final-cta-grid"><div><p className="home-kicker">THE NEXT MOVE</p><h2 id="final-title">Ready for a website that better fits your business?</h2></div><div className="final-cta-copy"><p>Show us what you have—or tell us what you need. We’ll help you figure out the right next step.</p><Link className="home-cta-primary focus-ring" href="/contact">Start a Conversation <span aria-hidden="true">→</span></Link></div></div>
+      <div className="wrap final-cta-grid"><div><p className="home-kicker">THE NEXT MOVE</p><h2 id="final-title">Ready for a website that better fits your business?</h2></div><div className="final-cta-copy"><p>Show us what you have, or tell us what you need. We’ll help you figure out the right next step.</p><Link className="home-cta-primary focus-ring" href="/contact">Start a Conversation <span aria-hidden="true">→</span></Link></div></div>
     </section>
   </div>;
 }
