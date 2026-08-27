@@ -4,3 +4,10 @@
 @media(max-width:800px){
   .pricing-hero{padding-top:3.3rem;padding-bottom:3.5rem}
 }
+
+/* Pricing simplification: compact scope and enhancement treatments. */
+.pricing-hero{padding-bottom:clamp(3.55rem,5.5vw,5.5rem)}
+.pricing-shared-note{max-width:720px;margin:1.35rem 0 0;color:rgba(245,241,232,.58);font-size:.82rem;line-height:1.6}
+.pricing-starting-columns{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,7vw,7rem)}
+.pricing-starting-columns article{padding-top:.3rem}.pricing-starting-columns h3{margin:0;font-size:1.45rem;font-weight:500;line-height:1.05}.pricing-starting-columns p{margin:.8rem 0 0;color:rgba(23,25,28,.68);line-height:1.6}.pricing-starting-columns ul{margin:1.3rem 0 0;padding:0;border-top:1px solid rgba(23,25,28,.2);list-style:none}.pricing-starting-columns li{padding:.7rem 0;border-bottom:1px solid rgba(23,25,28,.16);font-size:.88rem;line-height:1.45}.pricing-starting-columns li:before{margin-right:.45rem;color:var(--canyon);content:"/"}.pricing-starting-columns .pricing-text-link{margin-top:1.35rem}.pricing-enhancement-grid{grid-template-columns:repeat(3,1fr)}.pricing-enhancement-grid article{min-height:210px}.pricing-final{padding:clamp(4.5rem,7.5vw,8rem) 0}
+@media(max-width:800px){.pricing-hero{padding-bottom:3.25rem}.pricing-starting-columns{grid-template-columns:1fr;gap:2.4rem}.pricing-enhancement-grid{grid-template-columns:1fr}.pricing-final{padding:4rem 0 4.5rem}}
