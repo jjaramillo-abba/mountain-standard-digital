@@ -1,5 +1,6 @@
 .savages-gear-page {
-  overflow: hidden;
+  --savages-header-background: #151812;
+  overflow: clip;
   background: #151812;
   color: #f5eedc;
   font-family: Inter, Arial, sans-serif;
@@ -10,11 +11,15 @@
 }
 
 .gear-header-stage {
+  position: sticky;
+  top: 0;
+  z-index: 20;
   border-bottom: 1px solid rgba(245, 238, 220, 0.2);
   background: #151812;
 }
 
 .gear-header-stage > .wrap > .modern-showcase-head {
+  position: static;
   border-bottom: 0;
 }
 

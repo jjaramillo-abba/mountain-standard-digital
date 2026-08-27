@@ -1,4 +1,11 @@
 /* The Gear route opts into the approved header's existing mobile mode. */
+.modern-showcase-head {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--savages-header-background, #12140f);
+}
+
 .savages-shared-header.is-responsive > strong { display: none; }
 
 .savages-shared-header.is-phone {
