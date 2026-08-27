@@ -83,7 +83,7 @@ export function HomepageSections() {
 
     <section className="home-local" aria-labelledby="local-title">
       <div className="local-lines" aria-hidden="true"><i /><i /><i /></div>
-      <div className="wrap local-grid"><div><p className="home-kicker">LOCAL, WITH RANGE</p><h2 id="local-title">Built for local businesses. By people who understand local business.</h2></div><div><p>Mountain Standard Digital works with small businesses across the Southwest and Rocky Mountain region. We&apos;re building MSD around something increasingly difficult to find online: straightforward pricing, responsive service, and someone you can actually talk to.</p><strong>Local perspective. <em>Modern technology.</em> Personal service.</strong></div></div>
+      <div className="wrap mountain-west-grid"><div><p className="home-kicker">BUILT IN THE MOUNTAIN WEST</p><h2 id="local-title">Modern websites.<br />Personal service.</h2></div><div className="mountain-west-copy"><p>Mountain Standard Digital works with small businesses across the Southwest and Rocky Mountain region. We combine modern web technology with straightforward communication and a hands-on approach.</p><p className="mountain-west-statement">Straightforward. Responsive. Human.</p><Link className="mountain-west-cta focus-ring" href="/about">About MSD <span aria-hidden="true">→</span></Link></div></div>
     </section>
 
     <section className="home-final-cta" aria-labelledby="final-title">

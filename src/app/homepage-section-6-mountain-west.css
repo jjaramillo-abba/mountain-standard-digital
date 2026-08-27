@@ -1,0 +1,13 @@
+/* Homepage section 6: concise regional credibility before the final CTA. */
+.home-local{min-height:0;padding:5.5rem 0;background:#49647a}
+.home-local .local-lines{opacity:.16}
+.mountain-west-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(300px,.72fr);gap:clamp(4rem,8vw,8rem);align-items:start}
+.home-local .home-kicker{color:#d6e7ef}
+.home-local h2{max-width:620px;margin:1.1rem 0 0;font-family:Outfit,Inter,sans-serif;font-size:clamp(3rem,4.5vw,4.75rem);font-weight:600;line-height:.93;letter-spacing:-.055em}
+.mountain-west-copy{max-width:420px;padding-top:.35rem}
+.mountain-west-copy>p:first-child{margin:0;color:rgba(245,241,232,.8);font-size:1rem;line-height:1.7}
+.mountain-west-statement{margin:1.8rem 0 0;color:#f5f1e8;font-family:Outfit,Inter,sans-serif;font-size:clamp(1.25rem,1.8vw,1.7rem);font-weight:500;line-height:1.05;letter-spacing:-.035em}
+.mountain-west-cta{display:inline-flex;align-items:center;gap:.8rem;margin-top:1.85rem;padding:.6rem 0;border-bottom:1px solid rgba(245,241,232,.65);color:#f5f1e8;font-size:.8rem;font-weight:700}
+.mountain-west-cta span{color:#d6e7ef;font-size:1rem;transition:transform .2s ease}
+.mountain-west-cta:hover span{transform:translateX(3px)}
+@media(max-width:800px){.home-local{padding:4.6rem 0}.mountain-west-grid{grid-template-columns:1fr;gap:2.25rem}.home-local h2{font-size:clamp(2.75rem,12vw,4.15rem)}.mountain-west-copy{max-width:560px;padding-top:0}.mountain-west-copy>p:first-child{font-size:.96rem;line-height:1.65}.mountain-west-statement{margin-top:1.5rem}.mountain-west-cta{margin-top:1.55rem}}
