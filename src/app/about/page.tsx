@@ -11,7 +11,7 @@ export const metadata = { title: "About" };
 
 export default function Page() {
   return <Shell><div className="bg-[#f5f1e8] text-[#17191c]">
-    <section className="relative isolate overflow-hidden py-16 md:py-20"><div aria-hidden="true" className="pointer-events-none absolute bottom-0 right-0 z-0 aspect-[35/11] w-full opacity-70 md:opacity-100"><Image src="/assets/msd-about-hero-mountain-topo.webp" alt="" fill priority sizes="100vw" className="object-contain object-right-bottom"/></div><div className="wrap relative z-10">
+    <section className="relative isolate overflow-hidden py-16 md:py-20"><div aria-hidden="true" className="pointer-events-none absolute bottom-0 right-0 z-0 aspect-[35/11] w-full opacity-70 md:opacity-100"><Image src="/assets/msd-about-hero-mountain-topo.webp" alt="" fill priority sizes="100vw" className="object-contain object-right-bottom" style={{ maskImage: "linear-gradient(to bottom, transparent 0%, transparent 9%, #000 15%)", WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, transparent 9%, #000 15%)" }}/></div><div className="wrap relative z-10">
       <p className="text-xs font-bold tracking-[.17em] text-[#49647a]">ABOUT MSD</p>
       <h1 className="mt-5 max-w-4xl font-[Outfit] text-[clamp(3.5rem,6vw,6.8rem)] font-semibold leading-[.88]">Real technology experience.<br/><span className="text-[#49647a]">Built for small business.</span></h1>
       <p className="mt-7 max-w-3xl text-lg leading-8 text-black/65">Mountain Standard Digital is a U.S.-based web technology company headquartered in the Rocky Mountain region, founded by Joseph Jaramillo and Asa Shows—technology professionals with more than 25 years of industry experience each.</p>
