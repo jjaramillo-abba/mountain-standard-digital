@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import { SavagesHeader } from "@/components/savages-header";
 
 const stickers = [
   { name: "Dry January", image: "/assets/savages-sticker-dry-january.png", alt: "Dry January Savages Fly Gear sticker artwork", className: "gear-art-dry" },
@@ -12,12 +12,7 @@ const stickers = [
 
 export function SavagesGearContent({ phonePreview = false }: { phonePreview?: boolean }) {
   return <div className={`savages-gear-page${phonePreview ? " gear-phone-content" : ""}`}>
-    <header className="gear-header">
-      <Link className="gear-lockup" href="/savages-modern" aria-label="Savages Fly Gear home"><span>SAVAGES</span><small>FLY GEAR</small></Link>
-      <nav aria-label="Savages primary navigation"><Link href="/savages-modern"><em>01</em> FLIES</Link><Link className="is-active" href="/savages-gear" aria-current="page"><em>02</em> GEAR</Link><a href="#collection"><em>03</em> STORIES</a><a href="#about"><em>04</em> ABOUT</a></nav>
-      <Image className="gear-logo" src="/assets/savages-logo.png" alt="Savages Fly Gear" width={50} height={50} priority />
-      <details className="gear-mobile-menu"><summary>MENU</summary><nav aria-label="Savages mobile navigation"><Link href="/savages-modern">01 FLIES</Link><Link href="/savages-gear" aria-current="page">02 GEAR</Link><a href="#collection">03 STORIES</a><a href="#about">04 ABOUT</a></nav></details>
-    </header>
+    <SavagesHeader active="gear" mobile={phonePreview} phone={phonePreview} responsive={!phonePreview} />
 
     <section className="gear-intro"><div><p>GEAR / STICKERS</p><h1>Stick it somewhere<br />{" "}irresponsible.</h1></div><span>A collection of Savages artwork for fly boxes, coolers, trucks, boats, and wherever else good judgment runs out.</span></section>
 
