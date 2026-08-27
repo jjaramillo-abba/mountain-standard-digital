@@ -152,14 +152,14 @@
 }
 
 .gear-collection {
-  padding-top: clamp(3.5rem, 5vw, 5.25rem);
-  padding-bottom: clamp(2.75rem, 4vw, 4.25rem);
+  padding-top: clamp(3rem, 3.2vw, 4.25rem);
+  padding-bottom: clamp(2.5rem, 3.25vw, 3.6rem);
   background: #f1e2c3;
   color: #171913;
 }
 
 .gear-collection-heading {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
 }
 
 .gear-collection-heading > p {
@@ -176,8 +176,8 @@
 .gear-art-spread {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  column-gap: clamp(1.1rem, 1.9vw, 2.15rem);
-  row-gap: clamp(0.9rem, 1.4vw, 1.4rem);
+  column-gap: clamp(0.95rem, 1.4vw, 1.65rem);
+  row-gap: clamp(0.7rem, 1.1vw, 1.05rem);
   align-items: end;
 }
 
@@ -226,7 +226,7 @@
 }
 
 .gear-art-dry {
-  width: 82%;
+  width: 63%;
   justify-self: end;
 }
 
@@ -234,7 +234,7 @@
   grid-column: 5 / span 3;
   grid-row: 1;
   align-self: center;
-  width: 93%;
+  width: 78%;
   justify-self: start;
   margin-bottom: clamp(1rem, 4.5vw, 4.5rem);
 }
@@ -247,7 +247,7 @@
 .gear-art-bugs {
   grid-column: 8 / span 5;
   grid-row: 1;
-  width: 80%;
+  width: 60%;
   justify-self: start;
 }
 
@@ -261,14 +261,14 @@
   grid-column: 1 / span 3;
   grid-row: 2;
   align-self: start;
-  width: 112%;
-  margin-top: clamp(0.6rem, 2vw, 2rem);
+  width: 92%;
+  margin-top: clamp(0.45rem, 1.4vw, 1.35rem);
 }
 
 .gear-art-summer {
   grid-column: 4 / span 5;
   grid-row: 2;
-  width: 90%;
+  width: 72%;
   justify-self: center;
 }
 
@@ -280,6 +280,8 @@
   grid-column: 9 / span 3;
   grid-row: 2;
   align-self: center;
+  width: 80%;
+  justify-self: start;
   margin-bottom: clamp(1rem, 5vw, 5rem);
 }
 
