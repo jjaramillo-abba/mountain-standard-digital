@@ -1,0 +1,32 @@
+/* The Gear route opts into the approved header's existing mobile mode. */
+.modern-showcase-head {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--savages-header-background, #12140f);
+}
+
+.savages-shared-header.is-responsive > strong { display: none; }
+
+.savages-shared-header.is-phone {
+  height: 58px;
+  padding: 8px 12px;
+}
+
+.savages-shared-header.is-phone b { font-size: 25px; }
+.savages-shared-header.is-phone small { font-size: 6px; }
+.savages-shared-header.is-phone .savages-study-logo { width: 37px; height: 37px; margin-left: auto; }
+.savages-shared-header.is-phone > strong { margin-left: 10px; color: #e8bc25; font-size: 8px; letter-spacing: .12em; }
+
+@media (max-width: 800px) {
+  .savages-shared-header.is-responsive {
+    height: 58px;
+    padding: 8px 12px;
+  }
+
+  .savages-shared-header.is-responsive b { font-size: 25px; }
+  .savages-shared-header.is-responsive small { font-size: 6px; }
+  .savages-shared-header.is-responsive nav { display: none; }
+  .savages-shared-header.is-responsive .savages-study-logo { width: 37px; height: 37px; margin-left: auto; }
+  .savages-shared-header.is-responsive > strong { display: block; margin-left: 10px; color: #e8bc25; font-size: 8px; letter-spacing: .12em; }
+}

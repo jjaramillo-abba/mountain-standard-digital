@@ -1,0 +1,653 @@
+.savages-gear-page {
+  --savages-header-background: #151812;
+  overflow: clip;
+  background: #151812;
+  color: #f5eedc;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.savages-gear-page * {
+  box-sizing: border-box;
+}
+
+.gear-header-stage {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid rgba(245, 238, 220, 0.2);
+  background: #151812;
+}
+
+.gear-header-stage > .wrap > .modern-showcase-head {
+  position: static;
+  border-bottom: 0;
+}
+
+.gear-header-stage-phone > .wrap {
+  width: 100%;
+}
+
+.gear-intro,
+.gear-feature,
+.gear-collection,
+.gear-close {
+  padding-right: clamp(18px, 7vw, 10rem);
+  padding-left: clamp(18px, 7vw, 10rem);
+}
+
+.gear-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(250px, 0.42fr);
+  gap: clamp(2.5rem, 8vw, 9rem);
+  align-items: end;
+  padding-top: clamp(3.35rem, 5.6vw, 5.7rem);
+  padding-bottom: 2.8rem;
+  background: #1e2119;
+}
+
+.gear-intro > div {
+  min-width: 0;
+}
+
+.gear-intro p,
+.gear-feature-copy > p,
+.gear-collection-heading > p,
+.gear-close > p {
+  margin: 0;
+  color: #e8bc25;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.17em;
+}
+
+.gear-intro h1 {
+  max-width: min(760px, 100%);
+  margin: 1rem 0 0;
+  font: 400 clamp(3.35rem, 6.35vw, 7rem) / 0.8 Impact, Outfit, sans-serif;
+  letter-spacing: 0.012em;
+}
+
+.gear-intro > span {
+  max-width: 370px;
+  padding-bottom: 0.3rem;
+  color: rgba(245, 238, 220, 0.7);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.gear-feature {
+  display: grid;
+  grid-template-columns: minmax(0, .94fr) minmax(330px, 1.06fr);
+  min-height: 560px;
+  padding: 0;
+  background: #1e2119;
+}
+
+.gear-feature-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: clamp(34px, 5vw, 5.8rem) clamp(28px, 5vw, 6.6rem);
+}
+
+.gear-feature-copy h2 {
+  margin: 1rem 0 0;
+  font: 400 clamp(4rem, 7vw, 8rem) / 0.76 Impact, Outfit, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.gear-feature-copy > span {
+  margin-top: 1.45rem;
+  color: rgba(245, 238, 220, 0.72);
+  font-size: 12px;
+}
+
+.gear-feature-copy > small {
+  max-width: 330px;
+  margin-top: .85rem;
+  color: rgba(245, 238, 220, .58);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.gear-feature-copy a,
+.gear-close a {
+  display: inline-block;
+  margin-top: 1.2rem;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 5px;
+  color: #f5eedc;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+}
+
+.gear-feature-copy a b,
+.gear-close a span {
+  margin-left: 7px;
+  color: #e8bc25;
+}
+
+.gear-feature figure {
+  position: relative;
+  min-height: 560px;
+  margin: 0;
+  overflow: hidden;
+  background: #151812;
+}
+
+.gear-feature figure::before {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(90deg, rgba(21, 24, 18, .1), rgba(21, 24, 18, 0));
+  content: "";
+}
+
+.gear-feature figure img {
+  object-fit: contain;
+  object-position: center;
+  background: #151812;
+}
+
+.gear-collection {
+  padding-top: clamp(3rem, 3.2vw, 4.25rem);
+  padding-bottom: clamp(2.5rem, 3.25vw, 3.6rem);
+  background: #f1e2c3;
+  color: #171913;
+}
+
+.gear-collection-heading {
+  margin-bottom: 0;
+}
+
+.gear-collection-heading > p {
+  color: #a65623;
+}
+
+.gear-collection-heading h2 {
+  max-width: 690px;
+  margin: 0.8rem 0 0;
+  font: 400 clamp(3rem, 5vw, 6rem) / 0.8 Impact, Outfit, sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.gear-art-spread {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: clamp(0.95rem, 1.4vw, 1.65rem);
+  row-gap: clamp(0.7rem, 1.1vw, 1.05rem);
+  align-items: end;
+}
+
+.gear-art-spread article {
+  min-width: 0;
+}
+
+.gear-art-spread article > div {
+  position: relative;
+  overflow: hidden;
+  background: #d6b26a;
+}
+
+.gear-art-spread article img {
+  object-fit: contain;
+}
+
+.gear-art-spread article > p {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.85rem;
+  margin: 0.75rem 0 0;
+  color: #27291c;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.gear-art-spread article > p span {
+  color: rgba(39, 41, 28, 0.62);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.gear-art-dry {
+  grid-column: 1 / span 4;
+  grid-row: 1;
+}
+
+.gear-art-dry > div {
+  aspect-ratio: 2 / 3;
+  background: #234133;
+}
+
+.gear-art-dry {
+  width: 63%;
+  justify-self: end;
+}
+
+.gear-art-envy {
+  grid-column: 5 / span 3;
+  grid-row: 1;
+  align-self: center;
+  width: 78%;
+  justify-self: start;
+  margin-bottom: clamp(1rem, 4.5vw, 4.5rem);
+}
+
+.gear-art-envy > div,
+.gear-art-lebrown > div {
+  aspect-ratio: 1;
+}
+
+.gear-art-bugs {
+  grid-column: 8 / span 5;
+  grid-row: 1;
+  width: 60%;
+  justify-self: start;
+}
+
+.gear-art-bugs > div,
+.gear-art-summer > div,
+.gear-art-strippin > div {
+  aspect-ratio: 2 / 3;
+}
+
+.gear-art-lebrown {
+  grid-column: 1 / span 3;
+  grid-row: 2;
+  align-self: start;
+  width: 92%;
+  margin-top: clamp(0.45rem, 1.4vw, 1.35rem);
+}
+
+.gear-art-summer {
+  grid-column: 4 / span 5;
+  grid-row: 2;
+  width: 72%;
+  justify-self: center;
+}
+
+.gear-art-summer > div {
+  background: #dc5e1e;
+}
+
+.gear-art-strippin {
+  grid-column: 9 / span 3;
+  grid-row: 2;
+  align-self: center;
+  width: 80%;
+  justify-self: start;
+  margin-bottom: clamp(1rem, 5vw, 5rem);
+}
+
+.gear-close {
+  padding-top: clamp(3.25rem, 5vw, 4.75rem);
+  padding-bottom: clamp(3.5rem, 5vw, 5rem);
+  background: #b56b32;
+  color: #171913;
+}
+
+.gear-close > p {
+  color: #171913;
+}
+
+.gear-close h2 {
+  max-width: 720px;
+  margin: 0.8rem 0 0;
+  font: 400 clamp(3.4rem, 5.7vw, 6.25rem) / 0.79 Impact, Outfit, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.gear-close-tag {
+  display: block;
+  margin-top: 1rem;
+  color: #171913;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+}
+
+@media (max-width: 800px) {
+  .gear-header-stage > .wrap {
+    width: 100%;
+  }
+
+  .gear-header-stage > .wrap > .modern-showcase-head {
+    border-bottom: 1px solid rgba(245, 238, 220, 0.2);
+  }
+
+  .gear-header-stage {
+    border-bottom: 0;
+  }
+
+  .gear-intro {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 3.5rem 20px 2.7rem;
+  }
+
+  .gear-intro h1 {
+    font-size: clamp(2.75rem, 12.5vw, 5.5rem);
+  }
+
+  .gear-intro > span {
+    padding-bottom: 0;
+    font-size: 13px;
+  }
+
+  .gear-feature {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .gear-feature-copy {
+    padding: 3.35rem 20px 2.4rem;
+  }
+
+  .gear-feature-copy > small {
+    max-width: 330px;
+  }
+
+  .gear-feature-copy h2 {
+    font-size: clamp(4.5rem, 17vw, 7rem);
+  }
+
+  .gear-feature figure {
+    min-height: 0;
+    aspect-ratio: 1;
+  }
+
+  .gear-collection {
+    padding: 4.3rem 20px 3.75rem;
+  }
+
+  .gear-collection-heading {
+    margin-bottom: 0.65rem;
+  }
+
+  .gear-collection-heading h2 {
+    margin-top: 0.85rem;
+    font-size: clamp(3rem, 12vw, 5rem);
+  }
+
+  .gear-art-spread {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1.15rem;
+    row-gap: 2.1rem;
+    align-items: start;
+  }
+
+  .gear-art-dry,
+  .gear-art-envy,
+  .gear-art-bugs,
+  .gear-art-lebrown,
+  .gear-art-summer,
+  .gear-art-strippin {
+    grid-column: auto;
+    grid-row: auto;
+    align-self: auto;
+    margin: 0;
+    width: auto;
+    justify-self: auto;
+  }
+
+  .gear-art-lebrown,
+  .gear-art-summer {
+    width: auto;
+    justify-self: auto;
+  }
+
+  .gear-art-dry,
+  .gear-art-summer {
+    grid-column: span 2;
+  }
+
+  .gear-close {
+    padding: 3.75rem 20px 4rem;
+  }
+
+  .gear-close h2 {
+    font-size: clamp(3.5rem, 14vw, 6rem);
+  }
+}
+
+@media (max-width: 500px) {
+  .gear-intro h1 br {
+    display: none;
+  }
+
+  .gear-feature-copy {
+    padding: 2.6rem 20px 1.85rem;
+  }
+
+  .gear-feature-copy a {
+    display: inline-block;
+  }
+
+  .gear-feature figure {
+    aspect-ratio: 4 / 5;
+  }
+
+  .gear-art-spread {
+    grid-template-columns: 1fr;
+    row-gap: 2.25rem;
+  }
+
+  .gear-art-dry,
+  .gear-art-envy,
+  .gear-art-bugs,
+  .gear-art-lebrown,
+  .gear-art-summer,
+  .gear-art-strippin {
+    grid-column: auto;
+  }
+
+  .gear-art-dry,
+  .gear-art-bugs,
+  .gear-art-summer {
+    width: 100%;
+    justify-self: stretch;
+  }
+
+  .gear-art-envy {
+    width: 82%;
+    justify-self: center;
+  }
+
+  .gear-art-lebrown {
+    width: 86%;
+    justify-self: start;
+  }
+
+  .gear-art-strippin {
+    width: 78%;
+    justify-self: end;
+  }
+
+  .gear-art-spread article > p {
+    justify-content: flex-start;
+  }
+
+  .gear-close {
+    padding: 2.85rem 20px 3.1rem;
+  }
+
+  .gear-close h2 {
+    font-size: clamp(3rem, 12.5vw, 4.5rem);
+  }
+}
+
+/* Dedicated mobile presentation route. The Gear content remains the same shared component;
+   these rules simply render its approved narrow layout inside a 390px phone viewport. */
+.savages-gear-mobile-showcase {
+  display: grid;
+  min-height: 100svh;
+  place-items: center;
+  overflow: hidden;
+  padding: clamp(2.5rem, 6vw, 5rem) 1.5rem;
+  background: #f1e2c3;
+}
+
+.savages-gear-phone {
+  position: relative;
+  width: 410px;
+  height: 800px;
+  overflow: hidden;
+  border: 10px solid #141517;
+  border-radius: 36px;
+  background: #141517;
+  box-shadow: 0 22px 42px rgba(23, 25, 28, 0.18), inset 0 0 0 1px rgba(255, 255, 255, 0.13);
+}
+
+.savages-gear-phone::before {
+  position: absolute;
+  z-index: 2;
+  top: 5px;
+  left: 50%;
+  width: 62px;
+  height: 5px;
+  border-radius: 99px;
+  background: #070807;
+  content: "";
+  transform: translateX(-50%);
+}
+
+.savages-gear-phone-screen {
+  height: calc(100% - 14px);
+  margin-top: 14px;
+  overflow: hidden;
+  border-radius: 25px 25px 21px 21px;
+  background: #1e2119;
+}
+
+.gear-phone-content {
+  width: 390px;
+  min-height: 0;
+  transform-origin: top left;
+}
+
+.gear-phone-content .gear-intro {
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 3.5rem 20px 2.7rem;
+}
+
+.gear-phone-content .gear-intro h1 {
+  font-size: 48.75px;
+}
+
+.gear-phone-content .gear-intro h1 br {
+  display: none;
+}
+
+.gear-phone-content .gear-intro > span {
+  padding-bottom: 0;
+  font-size: 13px;
+}
+
+.gear-phone-content .gear-feature {
+  grid-template-columns: 1fr;
+  min-height: 0;
+}
+
+.gear-phone-content .gear-feature-copy {
+  padding: 2.6rem 20px 1.85rem;
+}
+
+.gear-phone-content .gear-feature-copy h2 {
+  font-size: 72px;
+}
+
+.gear-phone-content .gear-feature-copy a {
+  display: inline-block;
+}
+
+.gear-phone-content .gear-feature figure {
+  min-height: 0;
+  aspect-ratio: 4 / 5;
+}
+
+.gear-phone-content .gear-collection {
+  padding: 4.3rem 20px 3.75rem;
+}
+
+.gear-phone-content .gear-collection-heading {
+  margin-bottom: 0.65rem;
+}
+
+.gear-phone-content .gear-collection-heading h2 {
+  margin-top: 0.85rem;
+  font-size: 46.8px;
+}
+
+.gear-phone-content .gear-art-spread {
+  grid-template-columns: 1fr;
+  row-gap: 2.25rem;
+}
+
+.gear-phone-content .gear-art-dry,
+.gear-phone-content .gear-art-envy,
+.gear-phone-content .gear-art-bugs,
+.gear-phone-content .gear-art-lebrown,
+.gear-phone-content .gear-art-summer,
+.gear-phone-content .gear-art-strippin {
+  grid-column: auto;
+  grid-row: auto;
+  align-self: auto;
+  margin: 0;
+}
+
+.gear-phone-content .gear-art-dry,
+.gear-phone-content .gear-art-bugs,
+.gear-phone-content .gear-art-summer {
+  width: 100%;
+}
+
+.gear-phone-content .gear-art-envy {
+  width: 82%;
+  justify-self: center;
+}
+
+.gear-phone-content .gear-art-lebrown {
+  width: 86%;
+  justify-self: start;
+}
+
+.gear-phone-content .gear-art-strippin {
+  width: 78%;
+  justify-self: end;
+}
+
+.gear-phone-content .gear-art-spread article > p {
+  justify-content: flex-start;
+}
+
+.gear-phone-content .gear-close {
+  padding: 2.85rem 20px 3.1rem;
+}
+
+.gear-phone-content .gear-close h2 {
+  font-size: 48.75px;
+}
+
+@media (max-width: 600px) {
+  .savages-gear-mobile-showcase {
+    min-height: auto;
+    padding: 2rem 0 3rem;
+  }
+
+  .savages-gear-phone {
+    zoom: 0.9;
+  }
+}
+
+@media (max-width: 400px) {
+  .savages-gear-phone {
+    zoom: 0.78;
+  }
+}
