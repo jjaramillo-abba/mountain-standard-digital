@@ -12,8 +12,8 @@
 .gear-header {
   display: flex;
   align-items: center;
-  min-height: 76px;
-  padding: 12px clamp(18px, 5vw, 76px);
+  height: 70px;
+  padding: 10px 17px;
   border-bottom: 1px solid rgba(245, 238, 220, 0.2);
   background: #11130e;
 }
@@ -26,7 +26,7 @@
 }
 
 .gear-lockup span {
-  font: 400 clamp(1.7rem, 2.4vw, 2.55rem) / 0.76 Impact, Outfit, sans-serif;
+  font: 400 31px / 0.76 Impact, Outfit, sans-serif;
   letter-spacing: 0.035em;
 }
 
@@ -40,13 +40,13 @@
 
 .gear-header nav {
   display: flex;
-  gap: clamp(16px, 3vw, 45px);
+  gap: 22px;
   margin-left: auto;
 }
 
 .gear-header nav a {
   color: #d8cfae;
-  font-size: 9px;
+  font-size: 8px;
   font-weight: 800;
   letter-spacing: 0.12em;
 }
@@ -54,7 +54,7 @@
 .gear-header nav a em {
   margin-right: 3px;
   color: #e8bc25;
-  font-size: 8px;
+  font-size: 7px;
   font-style: normal;
 }
 
@@ -69,7 +69,7 @@
 .gear-logo {
   width: 44px;
   height: 44px;
-  margin-left: clamp(18px, 4vw, 58px);
+  margin-left: 18px;
   object-fit: contain;
 }
 
@@ -123,10 +123,10 @@
 
 .gear-feature {
   display: grid;
-  grid-template-columns: minmax(270px, 0.65fr) minmax(0, 1.35fr);
-  min-height: 610px;
+  grid-template-columns: minmax(0, .94fr) minmax(330px, 1.06fr);
+  min-height: 560px;
   padding: 0;
-  background: #283020;
+  background: #1e2119;
 }
 
 .gear-feature-copy {
@@ -134,7 +134,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: clamp(34px, 5vw, 6.5rem) clamp(24px, 4vw, 5.8rem);
+  padding: clamp(34px, 5vw, 5.8rem) clamp(28px, 5vw, 6.6rem);
 }
 
 .gear-feature-copy h2 {
@@ -147,6 +147,14 @@
   margin-top: 1.45rem;
   color: rgba(245, 238, 220, 0.72);
   font-size: 12px;
+}
+
+.gear-feature-copy > small {
+  max-width: 330px;
+  margin-top: .85rem;
+  color: rgba(245, 238, 220, .58);
+  font-size: 12px;
+  line-height: 1.55;
 }
 
 .gear-feature-copy a,
@@ -169,23 +177,24 @@
 
 .gear-feature figure {
   position: relative;
-  min-height: 610px;
+  min-height: 560px;
   margin: 0;
   overflow: hidden;
-  background: #11130e;
+  background: #151812;
 }
 
 .gear-feature figure::before {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(40, 48, 32, 0.6), transparent 26%);
+  z-index: 1;
+  background: linear-gradient(90deg, rgba(21, 24, 18, .1), rgba(21, 24, 18, 0));
   content: "";
 }
 
 .gear-feature figure img {
   object-fit: contain;
   object-position: center;
-  background: #11130e;
+  background: #151812;
 }
 
 .gear-collection {
@@ -340,12 +349,13 @@
 
 @media (max-width: 800px) {
   .gear-header {
-    min-height: 64px;
-    padding: 10px 16px;
+    height: 58px;
+    min-height: 58px;
+    padding: 8px 12px;
   }
 
   .gear-lockup span {
-    font-size: 1.8rem;
+    font-size: 25px;
   }
 
   .gear-header > nav {
@@ -355,17 +365,16 @@
   .gear-mobile-menu {
     position: relative;
     display: block;
-    margin-left: auto;
+    margin-left: 10px;
   }
 
   .gear-mobile-menu summary {
     display: flex;
     align-items: center;
-    gap: 8px;
-    min-height: 40px;
+    min-height: auto;
     cursor: pointer;
     color: #f5eedc;
-    font-size: 9px;
+    font-size: 8px;
     font-weight: 800;
     letter-spacing: 0.16em;
     list-style: none;
@@ -373,16 +382,6 @@
 
   .gear-mobile-menu summary::-webkit-details-marker {
     display: none;
-  }
-
-  .gear-mobile-menu summary span {
-    color: #e8bc25;
-    font-size: 14px;
-    transition: transform 160ms ease;
-  }
-
-  .gear-mobile-menu[open] summary span {
-    transform: rotate(45deg);
   }
 
   .gear-mobile-menu nav {
@@ -415,7 +414,10 @@
   }
 
   .gear-logo {
-    display: none;
+    display: block;
+    width: 37px;
+    height: 37px;
+    margin-left: auto;
   }
 
   .gear-intro {
@@ -440,6 +442,10 @@
 
   .gear-feature-copy {
     padding: 3.35rem 20px 2.4rem;
+  }
+
+  .gear-feature-copy > small {
+    max-width: 330px;
   }
 
   .gear-feature-copy h2 {
@@ -513,7 +519,7 @@
   }
 
   .gear-feature-copy a {
-    display: none;
+    display: inline-block;
   }
 
   .gear-feature figure {
@@ -619,23 +625,30 @@
 }
 
 .gear-phone-content .gear-header {
-  min-height: 64px;
-  padding: 10px 16px;
+  height: 58px;
+  min-height: 58px;
+  padding: 8px 12px;
 }
 
 .gear-phone-content .gear-lockup span {
-  font-size: 1.8rem;
+  font-size: 25px;
 }
 
-.gear-phone-content .gear-header > nav,
-.gear-phone-content .gear-logo {
+.gear-phone-content .gear-header > nav {
   display: none;
+}
+
+.gear-phone-content .gear-logo {
+  display: block;
+  width: 37px;
+  height: 37px;
+  margin-left: auto;
 }
 
 .gear-phone-content .gear-mobile-menu {
   position: relative;
   display: block;
-  margin-left: auto;
+  margin-left: 10px;
 }
 
 .gear-phone-content .gear-mobile-menu summary {
@@ -655,16 +668,11 @@
 }
 
 .gear-phone-content .gear-mobile-menu summary::after {
-  width: 6px;
-  height: 6px;
-  border-right: 1px solid #e1b51f;
-  border-bottom: 1px solid #e1b51f;
-  content: "";
-  transform: translateY(-2px) rotate(45deg);
+  display: none;
 }
 
 .gear-phone-content .gear-mobile-menu[open] summary::after {
-  transform: translateY(2px) rotate(225deg);
+  display: none;
 }
 
 .gear-phone-content .gear-mobile-menu nav {
@@ -722,7 +730,7 @@
 }
 
 .gear-phone-content .gear-feature-copy a {
-  display: none;
+  display: inline-block;
 }
 
 .gear-phone-content .gear-feature figure {
