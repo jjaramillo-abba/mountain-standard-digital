@@ -10,9 +10,8 @@ const principles = [
 const inclusions = [
   ["Modern visual design", "A current visual experience built around your existing brand."],
   ["Mobile-first responsive build", "Designed to work naturally across the screens your customers actually use."],
-  ["Clear navigation and hierarchy", "Make important information easier to find and act on."],
+  ["Clear navigation and contact paths", "Make important information easy to find—and make the next step obvious."],
   ["Existing content carried forward", "Keep useful copy, photography, and brand assets where they still work."],
-  ["A clear contact path", "Calls to action and a contact form where appropriate."],
   ["Launch-ready fundamentals", "Performance, accessibility, migration, and deployment considered as part of the build."],
 ];
 
@@ -43,7 +42,7 @@ export function HomepageSections() {
 
     <section className="home-proof home-proof-rebuild" aria-labelledby="proof-title">
       <div className="wrap">
-        <div className="proof-rebuild-heading"><p className="home-kicker">THE TRANSFORMATION</p><h2 id="proof-title">Same business. <em>Better digital experience.</em></h2><p>We kept the recognizable Savages character and core content, then rebuilt the experience around clearer hierarchy, stronger imagery, and mobile-first behavior.</p></div>
+        <div className="proof-rebuild-heading"><p className="home-kicker">THE TRANSFORMATION</p><h2 id="proof-title">Same business. <em>Better digital experience.</em></h2><p>We kept the recognizable Savages character and core content, then rebuilt the experience around clearer hierarchy, stronger imagery, and mobile-first design.</p></div>
         <div className="proof-rebuild-stage">
           <article className="proof-rebuild-legacy"><div className="proof-rebuild-label"><span>BEFORE</span><small>Legacy desktop</small></div><div className="proof-legacy-viewport"><SavagesStudy kind="legacy" embedded/></div></article>
           <div className="proof-rebuild-arrow" aria-label="Legacy website modernized into a new digital experience">→</div>
@@ -56,14 +55,12 @@ export function HomepageSections() {
       <div className="wrap home-includes-grid">
         <div><p className="home-kicker">WHAT YOU GET</p><h2 id="includes-title">The essentials of a modern website.<br />Done right.</h2></div>
         <ol className="includes-list">{inclusions.map(([title, description], index) => <li key={title}><span>{String(index + 1).padStart(2, "0")}</span><div><h3>{title}</h3><p>{description}</p></div></li>)}</ol>
-        <div className="includes-closing"><p>Keep what makes your business yours. Modernize the experience around it.</p><span>We build from the brand, content, photography, and customer recognition you already have whenever they still serve the business.</span></div>
       </div>
     </section>
 
     <section className="home-process" aria-labelledby="process-title">
       <div className="wrap"><div className="home-section-lead compact"><p className="home-kicker">HOW IT WORKS</p><h2 id="process-title">A clear path to a better website.</h2></div>
         <div className="process-steps">{steps.map(([number, title, copy]) => <article key={number}><span>{number}</span><h3>{title}</h3><p>{copy}</p></article>)}</div>
-        <Link className="process-cta focus-ring" href="/how-it-works">See How It Works <span aria-hidden="true">→</span></Link>
       </div>
     </section>
 
@@ -73,7 +70,7 @@ export function HomepageSections() {
           <article><p>01 / WEBSITE MODERNIZATION</p><h3>Starting at $500</h3><span>Focused modernization of an established small-business website.</span></article>
           <article><p>02 / HOSTING &amp; MAINTENANCE</p><h3>$50 <small>/ month</small></h3><span>Managed hosting and ongoing site care after launch.</span></article>
         </div>
-        <div className="price-preview-footer"><p>More complex site? We scope it before we build it.</p><Link className="price-preview-cta focus-ring" href="/pricing">See Pricing <span aria-hidden="true">→</span></Link></div>
+        <div className="price-preview-footer"><p>Need something more—or starting from scratch? We’ll scope it with you before we build it.</p><Link className="price-preview-cta focus-ring" href="/pricing">See Pricing <span aria-hidden="true">→</span></Link></div>
       </div>
     </section>
 
@@ -83,7 +80,7 @@ export function HomepageSections() {
     </section>
 
     <section className="home-final-cta" aria-labelledby="final-title">
-      <div className="wrap final-cta-grid"><div><p className="home-kicker">THE NEXT MOVE</p><h2 id="final-title">Ready to see what your website could become?</h2></div><div className="final-cta-copy"><p>Show us what you have. We’ll help you determine what’s worth keeping, what should change, and what the next version could look like.</p><Link className="home-cta-primary focus-ring" href="/contact">Start a Conversation <span aria-hidden="true">→</span></Link></div></div>
+      <div className="wrap final-cta-grid"><div><p className="home-kicker">THE NEXT MOVE</p><h2 id="final-title">Ready for a website that better fits your business?</h2></div><div className="final-cta-copy"><p>Show us what you have—or tell us what you need. We’ll help you figure out the right next step.</p><Link className="home-cta-primary focus-ring" href="/contact">Start a Conversation <span aria-hidden="true">→</span></Link></div></div>
     </section>
   </div>;
 }

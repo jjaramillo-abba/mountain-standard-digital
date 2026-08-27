@@ -38,7 +38,7 @@ export function SignatureHero() {
         <p className="signature-name">MOUNTAIN STANDARD <span>DIGITAL</span></p>
         <h1><span>Your business moved forward.</span><span>Your website should too.</span></h1>
         <p className="signature-copy">Mountain Standard Digital modernizes outdated websites into fast, clear, mobile-first experiences that better represent the business behind them.</p>
-        <div className="signature-actions"><Link className="signature-primary" href="/contact">Modernize My Website <span>↗</span></Link><Link className="signature-secondary" href="/process">See How It Works</Link></div>
+        <div className="signature-actions"><Link className="signature-primary" href="/contact">Modernize My Website <span>↗</span></Link><Link className="signature-secondary" href="/pricing">See Pricing</Link></div>
       </div>
       <ResolvedExperience/>
     </section></main>

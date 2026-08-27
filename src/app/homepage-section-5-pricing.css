@@ -1,5 +1,5 @@
 /* Homepage section 5: a concise statement of one engagement and ongoing care. */
-.home-pricing{padding:5.25rem 0;background:#17191c;color:#f5f1e8}
+.home-pricing{padding:4.9rem 0;background:#17191c;color:#f5f1e8}
 .price-preview-intro{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(260px,.55fr);align-items:end;gap:4rem}
 .price-preview-intro .home-kicker{color:#a8c2ce}
 .price-preview-intro h2{max-width:680px;margin:1.1rem 0 0;font-family:Outfit,Inter,sans-serif;font-size:clamp(3rem,5vw,5.15rem);font-weight:600;line-height:.92;letter-spacing:-.055em}
@@ -17,4 +17,4 @@
 .price-preview-cta{display:inline-flex;flex:none;align-items:center;gap:.8rem;padding:.65rem 0;border-bottom:1px solid rgba(245,241,232,.62);color:#f5f1e8;font-size:.8rem;font-weight:700}
 .price-preview-cta span{color:#a8c2ce;font-size:1rem;transition:transform .2s ease}
 .price-preview-cta:hover span{transform:translateX(3px)}
-@media(max-width:800px){.home-pricing{padding:4.35rem 0}.price-preview-intro{display:block}.price-preview-intro h2{font-size:clamp(2.75rem,12vw,4.25rem)}.price-preview-intro>p{margin-top:1.4rem}.price-preview-offers{grid-template-columns:1fr;margin-top:2.25rem}.price-preview-offers article{padding:1.35rem 0 1.55rem}.price-preview-offers article+article{padding-left:0;border-top:1px solid rgba(245,241,232,.18);border-left:0}.price-preview-offers h3{font-size:clamp(2.8rem,14vw,4.2rem)}.price-preview-footer{display:block;margin-top:1.55rem}.price-preview-cta{margin-top:1.4rem}}
+@media(max-width:800px){.home-pricing{padding:4rem 0}.price-preview-intro{display:block}.price-preview-intro h2{font-size:clamp(2.75rem,12vw,4.25rem)}.price-preview-intro>p{margin-top:1.4rem}.price-preview-offers{grid-template-columns:1fr;margin-top:2.25rem}.price-preview-offers article{padding:1.35rem 0 1.55rem}.price-preview-offers article+article{padding-left:0;border-top:1px solid rgba(245,241,232,.18);border-left:0}.price-preview-offers h3{font-size:clamp(2.8rem,14vw,4.2rem)}.price-preview-footer{display:block;margin-top:1.55rem}.price-preview-cta{margin-top:1.4rem}}
