@@ -62,6 +62,10 @@
   color: #e8bc25;
 }
 
+.gear-mobile-menu {
+  display: none;
+}
+
 .gear-logo {
   width: 44px;
   height: 44px;
@@ -344,22 +348,74 @@
     font-size: 1.8rem;
   }
 
-  .gear-header nav {
-    gap: 10px;
+  .gear-header > nav {
+    display: none;
   }
 
-  .gear-header nav a {
-    font-size: 7px;
+  .gear-mobile-menu {
+    position: relative;
+    display: block;
+    margin-left: auto;
   }
 
-  .gear-header nav a em {
-    font-size: 6px;
+  .gear-mobile-menu summary {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 40px;
+    cursor: pointer;
+    color: #f5eedc;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    list-style: none;
+  }
+
+  .gear-mobile-menu summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .gear-mobile-menu summary span {
+    color: #e8bc25;
+    font-size: 14px;
+    transition: transform 160ms ease;
+  }
+
+  .gear-mobile-menu[open] summary span {
+    transform: rotate(45deg);
+  }
+
+  .gear-mobile-menu nav {
+    position: absolute;
+    z-index: 3;
+    top: calc(100% + 8px);
+    right: 0;
+    display: grid;
+    width: 168px;
+    border: 1px solid rgba(245, 238, 220, 0.2);
+    background: #11130e;
+    box-shadow: 0 15px 32px rgba(0, 0, 0, 0.24);
+  }
+
+  .gear-mobile-menu nav a {
+    padding: 13px 14px;
+    border-bottom: 1px solid rgba(245, 238, 220, 0.12);
+    color: #d8cfae;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+  }
+
+  .gear-mobile-menu nav a:last-child {
+    border-bottom: 0;
+  }
+
+  .gear-mobile-menu nav a[aria-current="page"] {
+    color: #e8bc25;
   }
 
   .gear-logo {
-    width: 36px;
-    height: 36px;
-    margin-left: 14px;
+    display: none;
   }
 
   .gear-intro {
@@ -448,17 +504,20 @@
 }
 
 @media (max-width: 500px) {
-  .gear-header nav a:nth-child(3),
-  .gear-header nav a:nth-child(4) {
-    display: none;
-  }
-
-  .gear-header nav {
-    gap: 12px;
-  }
-
   .gear-intro h1 br {
     display: none;
+  }
+
+  .gear-feature-copy {
+    padding: 2.6rem 20px 1.85rem;
+  }
+
+  .gear-feature-copy a {
+    display: none;
+  }
+
+  .gear-feature figure {
+    aspect-ratio: 4 / 5;
   }
 
   .gear-art-spread {
@@ -499,5 +558,13 @@
 
   .gear-art-spread article > p {
     justify-content: flex-start;
+  }
+
+  .gear-close {
+    padding: 2.85rem 20px 3.1rem;
+  }
+
+  .gear-close h2 {
+    font-size: clamp(3rem, 12.5vw, 4.5rem);
   }
 }

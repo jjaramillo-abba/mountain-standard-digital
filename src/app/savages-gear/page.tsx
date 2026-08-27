@@ -15,6 +15,7 @@ export default function SavagesGear() {
     <header className="gear-header">
       <Link className="gear-lockup" href="/savages-modern" aria-label="Savages Fly Gear home"><span>SAVAGES</span><small>FLY GEAR</small></Link>
       <nav aria-label="Savages primary navigation"><Link href="/savages-modern"><em>01</em> FLIES</Link><Link className="is-active" href="/savages-gear" aria-current="page"><em>02</em> GEAR</Link><a href="#collection"><em>03</em> STORIES</a><a href="#about"><em>04</em> ABOUT</a></nav>
+      <details className="gear-mobile-menu"><summary>MENU <span aria-hidden="true">+</span></summary><nav aria-label="Savages mobile navigation"><Link href="/savages-modern">01 FLIES</Link><Link href="/savages-gear" aria-current="page">02 GEAR</Link><a href="#collection">03 STORIES</a><a href="#about">04 ABOUT</a></nav></details>
       <Image className="gear-logo" src="/assets/savages-logo.png" alt="Savages Fly Gear" width={50} height={50} priority />
     </header>
 
