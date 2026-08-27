@@ -23,10 +23,6 @@ const steps = [
   ["04", "Go live", "Once you approve it, we handle the launch and get the new experience online."],
 ];
 
-function Arrow() {
-  return <span aria-hidden="true">↗</span>;
-}
-
 export function HomepageSections() {
   return <div className="homepage-complete">
     <section className="home-modernization" aria-labelledby="modernization-title">
@@ -87,7 +83,7 @@ export function HomepageSections() {
     </section>
 
     <section className="home-final-cta" aria-labelledby="final-title">
-      <div className="wrap"><p className="home-kicker">THE NEXT MOVE</p><h2 id="final-title">Your website doesn&apos;t need to stay stuck in the past.</h2><p>See what a modern version of your business could look like.</p><div><Link className="home-cta-primary" href="/contact">Refresh My Website <Arrow /></Link><Link className="home-cta-secondary" href="/contact">Talk With Us</Link></div></div>
+      <div className="wrap final-cta-grid"><div><p className="home-kicker">THE NEXT MOVE</p><h2 id="final-title">Ready to see what your website could become?</h2></div><div className="final-cta-copy"><p>Show us what you have. We’ll help you determine what’s worth keeping, what should change, and what the next version could look like.</p><Link className="home-cta-primary focus-ring" href="/contact">Start a Conversation <span aria-hidden="true">→</span></Link></div></div>
     </section>
   </div>;
 }
