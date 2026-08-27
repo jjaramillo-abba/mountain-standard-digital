@@ -1,0 +1,11 @@
+/* Homepage section 7: a single, low-pressure final decision. */
+.home-final-cta{padding:5.5rem 0 5.75rem;background:#f0e6d6}
+.final-cta-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(290px,.6fr);gap:clamp(3rem,9vw,9rem);align-items:end}
+.home-final-cta>.final-cta-grid>div{display:block;margin-top:0}
+.home-final-cta h2{max-width:760px;margin:1.1rem 0 0;font-family:Outfit,Inter,sans-serif;font-size:clamp(3rem,4.75vw,5.1rem);font-weight:600;line-height:.92;letter-spacing:-.06em}
+.final-cta-copy{max-width:410px;padding-bottom:.1rem}
+.final-cta-copy>p{margin:0;color:rgba(23,25,28,.7);font-size:1rem;line-height:1.7}
+.home-final-cta .home-cta-primary{display:inline-flex;align-items:center;gap:.8rem;margin-top:1.9rem;padding:.95rem 1.15rem;background:#17191c;color:#f5f1e8;font-size:.8rem;font-weight:700}
+.home-final-cta .home-cta-primary span{color:#a8c2ce;font-size:1rem;transition:transform .2s ease}
+.home-final-cta .home-cta-primary:hover span{transform:translateX(3px)}
+@media(max-width:800px){.home-final-cta{padding:4.6rem 0 4.8rem}.final-cta-grid{grid-template-columns:1fr;gap:2.25rem}.home-final-cta h2{font-size:clamp(2.75rem,11.5vw,4.1rem)}.final-cta-copy{max-width:560px}.final-cta-copy>p{font-size:.96rem;line-height:1.65}.home-final-cta .home-cta-primary{margin-top:1.55rem;padding:1rem 1.15rem}}
