@@ -24,6 +24,6 @@ export default function SavagesGear() {
 
     <section id="collection" className="gear-collection" aria-labelledby="collection-title"><div className="gear-collection-heading"><p>THE STICKER BIN / 07</p><h2 id="collection-title">Built for boxes,<br />boats, and bad ideas.</h2></div><div className="gear-art-spread">{stickers.map((sticker) => <article className={sticker.className} key={sticker.name}><div><Image src={sticker.image} alt={sticker.alt} fill sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw" /></div><p>{sticker.name}<span>Sticker · $5</span></p></article>)}</div></section>
 
-    <section id="about" className="gear-close"><p>SAVAGES FLY GEAR</p><h2>Keep it weird.</h2><Link href="/savages-modern">Back to the water <span>→</span></Link></section>
+    <section id="about" className="gear-close"><p>SAVAGES FLY GEAR</p><h2>Throw big flies.</h2><span className="gear-close-tag">#StripStreamers</span></section>
   </main>;
 }
