@@ -9,6 +9,19 @@
   box-sizing: border-box;
 }
 
+.gear-header-stage {
+  border-bottom: 1px solid rgba(245, 238, 220, 0.2);
+  background: #151812;
+}
+
+.gear-header-stage > .wrap > .modern-showcase-head {
+  border-bottom: 0;
+}
+
+.gear-header-stage-phone > .wrap {
+  width: 100%;
+}
+
 .gear-intro,
 .gear-feature,
 .gear-collection,
@@ -284,6 +297,18 @@
 }
 
 @media (max-width: 800px) {
+  .gear-header-stage > .wrap {
+    width: 100%;
+  }
+
+  .gear-header-stage > .wrap > .modern-showcase-head {
+    border-bottom: 1px solid rgba(245, 238, 220, 0.2);
+  }
+
+  .gear-header-stage {
+    border-bottom: 0;
+  }
+
   .gear-intro {
     grid-template-columns: 1fr;
     gap: 1.5rem;

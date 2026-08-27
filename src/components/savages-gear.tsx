@@ -12,7 +12,7 @@ const stickers = [
 
 export function SavagesGearContent({ phonePreview = false }: { phonePreview?: boolean }) {
   return <div className={`savages-gear-page${phonePreview ? " gear-phone-content" : ""}`}>
-    <SavagesHeader active="gear" mobile={phonePreview} phone={phonePreview} responsive={!phonePreview} />
+    <div className={`gear-header-stage${phonePreview ? " gear-header-stage-phone" : ""}`}><div className="wrap"><SavagesHeader active="gear" mobile={phonePreview} phone={phonePreview} responsive={!phonePreview} /></div></div>
 
     <section className="gear-intro"><div><p>GEAR / STICKERS</p><h1>Stick it somewhere<br />{" "}irresponsible.</h1></div><span>A collection of Savages artwork for fly boxes, coolers, trucks, boats, and wherever else good judgment runs out.</span></section>
 
