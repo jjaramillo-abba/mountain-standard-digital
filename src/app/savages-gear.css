@@ -568,3 +568,244 @@
     font-size: clamp(3rem, 12.5vw, 4.5rem);
   }
 }
+
+/* Dedicated mobile presentation route. The Gear content remains the same shared component;
+   these rules simply render its approved narrow layout inside a 390px phone viewport. */
+.savages-gear-mobile-showcase {
+  display: grid;
+  min-height: 100svh;
+  place-items: center;
+  overflow: hidden;
+  padding: clamp(2.5rem, 6vw, 5rem) 1.5rem;
+  background: #f1e2c3;
+}
+
+.savages-gear-phone {
+  position: relative;
+  width: 410px;
+  height: 800px;
+  overflow: hidden;
+  border: 10px solid #141517;
+  border-radius: 36px;
+  background: #141517;
+  box-shadow: 0 22px 42px rgba(23, 25, 28, 0.18), inset 0 0 0 1px rgba(255, 255, 255, 0.13);
+}
+
+.savages-gear-phone::before {
+  position: absolute;
+  z-index: 2;
+  top: 5px;
+  left: 50%;
+  width: 62px;
+  height: 5px;
+  border-radius: 99px;
+  background: #070807;
+  content: "";
+  transform: translateX(-50%);
+}
+
+.savages-gear-phone-screen {
+  height: calc(100% - 14px);
+  margin-top: 14px;
+  overflow: hidden;
+  border-radius: 25px 25px 21px 21px;
+  background: #1e2119;
+}
+
+.gear-phone-content {
+  width: 390px;
+  min-height: 0;
+  transform-origin: top left;
+}
+
+.gear-phone-content .gear-header {
+  min-height: 64px;
+  padding: 10px 16px;
+}
+
+.gear-phone-content .gear-lockup span {
+  font-size: 1.8rem;
+}
+
+.gear-phone-content .gear-header > nav,
+.gear-phone-content .gear-logo {
+  display: none;
+}
+
+.gear-phone-content .gear-mobile-menu {
+  position: relative;
+  display: block;
+  margin-left: auto;
+}
+
+.gear-phone-content .gear-mobile-menu summary {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  cursor: pointer;
+  list-style: none;
+  color: #f5ecd8;
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+}
+
+.gear-phone-content .gear-mobile-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.gear-phone-content .gear-mobile-menu summary::after {
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid #e1b51f;
+  border-bottom: 1px solid #e1b51f;
+  content: "";
+  transform: translateY(-2px) rotate(45deg);
+}
+
+.gear-phone-content .gear-mobile-menu[open] summary::after {
+  transform: translateY(2px) rotate(225deg);
+}
+
+.gear-phone-content .gear-mobile-menu nav {
+  position: absolute;
+  z-index: 5;
+  top: calc(100% + 0.7rem);
+  right: 0;
+  display: grid;
+  min-width: 132px;
+  padding: 0.75rem;
+  border: 1px solid rgba(225, 181, 31, 0.45);
+  background: #151812;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.22);
+}
+
+.gear-phone-content .gear-mobile-menu nav a {
+  padding: 0.45rem 0.35rem;
+  color: #f5ecd8;
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+}
+
+.gear-phone-content .gear-intro {
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 3.5rem 20px 2.7rem;
+}
+
+.gear-phone-content .gear-intro h1 {
+  font-size: 48.75px;
+}
+
+.gear-phone-content .gear-intro h1 br {
+  display: none;
+}
+
+.gear-phone-content .gear-intro > span {
+  padding-bottom: 0;
+  font-size: 13px;
+}
+
+.gear-phone-content .gear-feature {
+  grid-template-columns: 1fr;
+  min-height: 0;
+}
+
+.gear-phone-content .gear-feature-copy {
+  padding: 2.6rem 20px 1.85rem;
+}
+
+.gear-phone-content .gear-feature-copy h2 {
+  font-size: 72px;
+}
+
+.gear-phone-content .gear-feature-copy a {
+  display: none;
+}
+
+.gear-phone-content .gear-feature figure {
+  min-height: 0;
+  aspect-ratio: 4 / 5;
+}
+
+.gear-phone-content .gear-collection {
+  padding: 4.3rem 20px 3.75rem;
+}
+
+.gear-phone-content .gear-collection-heading {
+  margin-bottom: 0.65rem;
+}
+
+.gear-phone-content .gear-collection-heading h2 {
+  margin-top: 0.85rem;
+  font-size: 46.8px;
+}
+
+.gear-phone-content .gear-art-spread {
+  grid-template-columns: 1fr;
+  row-gap: 2.25rem;
+}
+
+.gear-phone-content .gear-art-dry,
+.gear-phone-content .gear-art-envy,
+.gear-phone-content .gear-art-bugs,
+.gear-phone-content .gear-art-lebrown,
+.gear-phone-content .gear-art-summer,
+.gear-phone-content .gear-art-strippin {
+  grid-column: auto;
+  grid-row: auto;
+  align-self: auto;
+  margin: 0;
+}
+
+.gear-phone-content .gear-art-dry,
+.gear-phone-content .gear-art-bugs,
+.gear-phone-content .gear-art-summer {
+  width: 100%;
+}
+
+.gear-phone-content .gear-art-envy {
+  width: 82%;
+  justify-self: center;
+}
+
+.gear-phone-content .gear-art-lebrown {
+  width: 86%;
+  justify-self: start;
+}
+
+.gear-phone-content .gear-art-strippin {
+  width: 78%;
+  justify-self: end;
+}
+
+.gear-phone-content .gear-art-spread article > p {
+  justify-content: flex-start;
+}
+
+.gear-phone-content .gear-close {
+  padding: 2.85rem 20px 3.1rem;
+}
+
+.gear-phone-content .gear-close h2 {
+  font-size: 48.75px;
+}
+
+@media (max-width: 600px) {
+  .savages-gear-mobile-showcase {
+    min-height: auto;
+    padding: 2rem 0 3rem;
+  }
+
+  .savages-gear-phone {
+    zoom: 0.9;
+  }
+}
+
+@media (max-width: 400px) {
+  .savages-gear-phone {
+    zoom: 0.78;
+  }
+}
