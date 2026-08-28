@@ -24,7 +24,7 @@ const themes: Record<Theme, { label: string; number: string; announcement: strin
     number: "04",
     announcement: "HAPPY HALLOWEEN",
     title: <>Scary good landscaping.</>,
-    supporting: "Great outdoor spaces shouldn&apos;t be frightening.",
+    supporting: "Great outdoor spaces shouldn't be frightening.",
   },
 };
 
