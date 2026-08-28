@@ -15,9 +15,9 @@ const themes: Record<Theme, { label: string; number: string; announcement: strin
   "game-day": {
     label: "GAME DAY",
     number: "03",
-    announcement: "GAME DAY IN THE MOUNTAIN WEST",
-    title: <>Go Broncos!</>,
-    supporting: "Proudly serving our community on game day and every day.",
+    announcement: "GO BRONCOS!",
+    title: <>Game day.<br />Built to enjoy.</>,
+    supporting: "Proudly supporting our team and our community.",
   },
   halloween: {
     label: "HALLOWEEN",
@@ -39,7 +39,7 @@ function ThemeDecorations({ theme }: { theme: Theme }) {
     <i className="theme-snowflake theme-snowflake-far theme-snowflake-one" /><i className="theme-snowflake theme-snowflake-near theme-snowflake-two" /><i className="theme-snowflake theme-snowflake-mid theme-snowflake-three" /><i className="theme-snowflake theme-snowflake-far theme-snowflake-four" /><i className="theme-snowflake theme-snowflake-mid theme-snowflake-five" /><i className="theme-snowflake theme-snowflake-near theme-snowflake-six" /><i className="theme-snowflake theme-snowflake-far theme-snowflake-seven" /><i className="theme-snowflake theme-snowflake-mid theme-snowflake-eight" /><i className="theme-snowflake theme-snowflake-far theme-snowflake-nine" /><i className="theme-snowflake theme-snowflake-near theme-snowflake-ten" /><i className="theme-snowflake theme-snowflake-mid theme-snowflake-eleven" /><i className="theme-snowflake theme-snowflake-far theme-snowflake-twelve" /><i className="theme-snowflake theme-snowflake-mid theme-snowflake-thirteen" /><i className="theme-snowflake theme-snowflake-far theme-snowflake-fourteen" /><i className="theme-snowflake theme-snowflake-near theme-snowflake-fifteen" /><i className="theme-snowflake theme-snowflake-mid theme-snowflake-sixteen" /><i className="theme-snowflake theme-snowflake-far theme-snowflake-seventeen" /><i className="theme-snowflake theme-snowflake-mid theme-snowflake-eighteen" /><i className="theme-snowflake theme-snowflake-near theme-snowflake-nineteen" /><i className="theme-snowflake theme-snowflake-far theme-snowflake-twenty" />
     <i className="theme-tree-twinkle theme-tree-twinkle-one" /><i className="theme-tree-twinkle theme-tree-twinkle-two" /><i className="theme-tree-twinkle theme-tree-twinkle-three" />
   </div>;
-  if (theme === "game-day") return <div className="theme-decorations theme-decorations-game-day" aria-hidden="true"><i className="theme-yard-lines" /><i className="theme-football theme-football-one" /><i className="theme-football theme-football-two" /></div>;
+  if (theme === "game-day") return null;
   return <div className="theme-decorations theme-decorations-halloween" aria-hidden="true"><i className="theme-web theme-web-left" /><i className="theme-web theme-web-right" /><i className="theme-bat theme-bat-one" /><i className="theme-bat theme-bat-two" /><i className="theme-leaf theme-leaf-one" /><i className="theme-leaf theme-leaf-two" /></div>;
 }
 
