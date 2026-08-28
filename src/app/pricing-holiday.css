@@ -7,11 +7,10 @@
   background:
     linear-gradient(
       90deg,
-      rgb(6, 15, 10) 0%,
-      rgb(6, 15, 10) 70%,
-      rgba(9, 16, 10, 0.72) 75%,
-      rgba(9, 16, 10, 0.18) 84%,
-      rgba(9, 16, 10, 0.03) 92%
+      rgba(4, 12, 8, 0.48) 0%,
+      rgba(4, 12, 8, 0.38) 40%,
+      rgba(7, 15, 9, 0.12) 62%,
+      rgba(7, 15, 9, 0.02) 78%
     ),
     url("/assets/pine-ridge-holiday.png") center bottom/cover no-repeat;
 }
@@ -226,10 +225,10 @@
   .theme-preview-seasonal[data-theme="holiday"] .theme-scene {
     background-position:
       0 0,
-      72% bottom;
+      72% center;
     background-size:
       auto,
-      auto 121.5%;
+      cover;
     background-repeat: no-repeat;
   }
 
