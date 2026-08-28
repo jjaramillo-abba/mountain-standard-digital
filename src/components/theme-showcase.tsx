@@ -29,6 +29,12 @@ const themes: Record<Theme, { label: string; number: string; announcement: strin
 };
 
 const themeOrder: Theme[] = ["holiday", "game-day", "halloween"];
+const themeAssets = [
+  "/assets/pine-ridge-holiday.png",
+  "/assets/pine-ridge-game-day.png",
+  "/assets/pine-ridge-halloween.png",
+  "/assets/pine-ridge-halloween-spider.png",
+] as const;
 
 function PineRidgeNav() {
   return <div className="theme-browser-nav"><b><span aria-hidden="true">♟</span> PINE RIDGE <small>LANDSCAPING</small></b><span>SERVICES　 ABOUT　 PROJECTS　 CONTACT</span></div>;
@@ -47,6 +53,14 @@ export function ThemeShowcase() {
   const [activeTheme, setActiveTheme] = useState<Theme>("holiday");
   const [hasInteracted, setHasInteracted] = useState(false);
   const [reducedMotion, setReducedMotion] = useState(false);
+
+  useEffect(() => {
+    for (const src of themeAssets) {
+      const image = new window.Image();
+      image.decoding = "async";
+      image.src = src;
+    }
+  }, []);
 
   useEffect(() => {
     const query = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -76,7 +90,7 @@ export function ThemeShowcase() {
       <article className="theme-preview theme-preview-standard"><p className="theme-preview-label">STANDARD SITE / 01</p><div className="theme-browser"><PineRidgeNav /><div className="theme-scene"><div><h3>Quality landscaping.<br />Built to last.</h3><p>Serving homeowners and businesses with professional landscaping solutions.</p><button type="button" tabIndex={-1}>REQUEST A QUOTE</button></div></div></div></article>
       <div className="theme-arrow" aria-hidden="true" />
       <article className="theme-preview theme-preview-seasonal" data-theme={activeTheme}>
-        <div className="theme-selector" aria-label="Select a temporary site theme">
+        <div className="theme-selector" data-active-theme={activeTheme} aria-label="Select a temporary site theme">
           {themeOrder.map((theme) => <button key={theme} type="button" className={activeTheme === theme ? "is-active" : ""} aria-pressed={activeTheme === theme} onClick={() => selectTheme(theme)}>{themes[theme].label}</button>)}
         </div>
         <p className="theme-preview-label">{active.label} / {active.number}</p>

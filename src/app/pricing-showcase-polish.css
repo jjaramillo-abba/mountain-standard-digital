@@ -1,0 +1,208 @@
+/* Final shared presentation polish for the accepted seasonal-theme showcase. */
+.pricing-enhancement-note {
+  margin-top: 1rem;
+}
+
+.pricing-seasonal-example {
+  margin-top: 0.7rem;
+  padding: 0.95rem 0 1rem;
+}
+
+.pricing-seasonal-eyebrow {
+  margin-bottom: 0.65rem;
+}
+
+.pricing-seasonal-comparison {
+  align-items: end;
+}
+
+.theme-preview-seasonal {
+  padding-top: 3.65rem;
+}
+
+.theme-preview-seasonal .theme-preview-label {
+  top: 2.3rem;
+}
+
+.theme-browser {
+  display: flex;
+  flex-direction: column;
+  height: 308px;
+  border-color: rgba(23, 25, 28, 0.12);
+  box-shadow: 0 7px 20px rgba(23, 25, 28, 0.075);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.theme-browser-nav,
+.theme-announcement {
+  flex: 0 0 auto;
+}
+
+.theme-browser .theme-scene {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.theme-preview:hover .theme-browser {
+  border-color: rgba(23, 25, 28, 0.17);
+  box-shadow: 0 9px 24px rgba(23, 25, 28, 0.095);
+}
+
+.theme-selector {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  width: min(100%, 15.75rem);
+}
+
+.theme-selector::after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 33.3333%;
+  height: 1px;
+  background: var(--canyon);
+  content: "";
+  transform: translateX(0);
+  transform-origin: left center;
+  transition: transform 0.42s cubic-bezier(0.22, 0.8, 0.25, 1);
+}
+
+.theme-selector[data-active-theme="game-day"]::after {
+  transform: translateX(100%);
+}
+
+.theme-selector[data-active-theme="halloween"]::after {
+  transform: translateX(200%);
+}
+
+.theme-selector button {
+  padding: 0 0.35rem 0.62rem;
+  color: rgba(23, 25, 28, 0.55);
+  font-weight: 600;
+  text-align: center;
+  transition: color 0.22s ease, font-weight 0.22s ease;
+}
+
+.theme-selector button::after {
+  display: none;
+}
+
+.theme-selector button:is(:hover, :focus-visible) {
+  color: #2b4658;
+}
+
+.theme-selector button.is-active {
+  color: #203d50;
+  font-weight: 700;
+}
+
+.theme-selector button:focus-visible {
+  outline: none;
+  background: rgba(221, 232, 238, 0.5);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.theme-arrow {
+  align-self: center;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(73, 100, 122, 0.5), #49647a 68%);
+  transform: translateY(1.25rem);
+}
+
+.theme-arrow::after {
+  top: -3px;
+  width: 8px;
+  height: 8px;
+}
+
+.pricing-seasonal-caption {
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  align-items: start;
+  margin-top: 0.75rem;
+  padding-top: 0.8rem;
+}
+
+.pricing-seasonal-caption h3 {
+  max-width: 330px;
+}
+
+.pricing-seasonal-caption p {
+  max-width: 610px;
+  line-height: 1.6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-selector::after,
+  .theme-selector button,
+  .theme-browser {
+    transition: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .pricing-enhancement-note {
+    margin-top: 0.9rem;
+  }
+
+  .pricing-seasonal-example {
+    margin-top: 0.65rem;
+    padding: 0.9rem 0;
+  }
+
+  .pricing-seasonal-eyebrow {
+    margin-bottom: 0.6rem;
+  }
+
+  .pricing-seasonal-comparison {
+    gap: 0.85rem;
+  }
+
+  .theme-browser {
+    height: 286px;
+  }
+
+  .theme-preview-seasonal {
+    padding-top: 3.55rem;
+  }
+
+  .theme-preview-seasonal .theme-preview-label {
+    top: 2.25rem;
+  }
+
+  .theme-selector {
+    width: min(100%, 22rem);
+  }
+
+  .theme-selector button {
+    min-height: 26px;
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
+  }
+
+  .theme-arrow {
+    width: 2px;
+    height: 25px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, rgba(73, 100, 122, 0.48), #49647a 70%);
+    transform: none;
+  }
+
+  .theme-arrow::after {
+    top: auto;
+    right: -3px;
+    bottom: 0;
+    transform: rotate(135deg);
+  }
+
+  .pricing-seasonal-caption {
+    margin-top: 0.75rem;
+    padding-top: 0.8rem;
+  }
+
+  .pricing-seasonal-caption h3 {
+    max-width: none;
+  }
+}
