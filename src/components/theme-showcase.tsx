@@ -35,7 +35,11 @@ function PineRidgeNav() {
 }
 
 function ThemeDecorations({ theme }: { theme: Theme }) {
-  if (theme === "holiday") return <div className="theme-decorations theme-decorations-holiday" aria-hidden="true"><i className="theme-wreath theme-wreath-left" /><i className="theme-wreath theme-wreath-right" /><i className="theme-snow theme-snow-one" /><i className="theme-snow theme-snow-two" /><i className="theme-snow theme-snow-three" /></div>;
+  if (theme === "holiday") return <div className="theme-decorations theme-decorations-holiday" aria-hidden="true">
+    <i className="theme-wreath theme-wreath-left" /><i className="theme-wreath theme-wreath-right" />
+    <div className="theme-holiday-tree"><span className="theme-tree-glow" /><span className="theme-tree-shadow" /><span className="theme-tree-trunk" /><span className="theme-tree-branch theme-tree-branch-top" /><span className="theme-tree-branch theme-tree-branch-mid" /><span className="theme-tree-branch theme-tree-branch-base" /><b className="theme-tree-light theme-tree-light-one" /><b className="theme-tree-light theme-tree-light-two" /><b className="theme-tree-light theme-tree-light-three" /><b className="theme-tree-light theme-tree-light-four" /><b className="theme-tree-light theme-tree-light-five" /></div>
+    <i className="theme-snowflake theme-snowflake-one" /><i className="theme-snowflake theme-snowflake-two" /><i className="theme-snowflake theme-snowflake-three" /><i className="theme-snowflake theme-snowflake-four" /><i className="theme-snowflake theme-snowflake-five" /><i className="theme-snowflake theme-snowflake-six" /><i className="theme-snowflake theme-snowflake-seven" /><i className="theme-snowflake theme-snowflake-eight" />
+  </div>;
   if (theme === "game-day") return <div className="theme-decorations theme-decorations-game-day" aria-hidden="true"><i className="theme-yard-lines" /><i className="theme-football theme-football-one" /><i className="theme-football theme-football-two" /></div>;
   return <div className="theme-decorations theme-decorations-halloween" aria-hidden="true"><i className="theme-web theme-web-left" /><i className="theme-web theme-web-right" /><i className="theme-bat theme-bat-one" /><i className="theme-bat theme-bat-two" /><i className="theme-leaf theme-leaf-one" /><i className="theme-leaf theme-leaf-two" /></div>;
 }
