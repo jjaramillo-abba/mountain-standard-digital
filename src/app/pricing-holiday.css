@@ -1,0 +1,324 @@
+/* Holiday-only layer: approved artwork with live UI, sparse snow, and restrained tree-light glow. */
+.theme-selector button {
+  transition: color 0.25s ease;
+}
+
+.theme-preview-seasonal[data-theme="holiday"] .theme-scene {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(4, 12, 8, 0.48) 0%,
+      rgba(4, 12, 8, 0.38) 40%,
+      rgba(7, 15, 9, 0.12) 62%,
+      rgba(7, 15, 9, 0.02) 78%
+    ),
+    url("/assets/pine-ridge-holiday.png") center bottom/cover no-repeat;
+}
+
+.theme-preview-seasonal[data-theme="holiday"] .theme-scene::before,
+.theme-preview-seasonal[data-theme="holiday"] .theme-scene::after {
+  display: none;
+  content: none;
+}
+
+.theme-preview-seasonal[data-theme="holiday"] .theme-browser-themed {
+  animation: holiday-arrival 0.85s cubic-bezier(0.22, 0.8, 0.25, 1) both;
+}
+
+.theme-preview-seasonal[data-theme="holiday"] .theme-announcement {
+  animation: holiday-bar 0.5s 0.18s both;
+}
+
+.theme-preview-seasonal[data-theme="holiday"] .theme-scene > div:last-child {
+  animation: holiday-copy 0.55s 0.25s both;
+}
+
+.theme-decorations-holiday {
+  animation: holiday-snow-layer-reveal 0.45s 0.75s both;
+}
+
+.theme-decorations-holiday .theme-snowflake {
+  z-index: 3;
+  top: var(--snow-top, -8%);
+  left: var(--snow-left, 50%);
+  right: auto;
+  bottom: auto;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.45);
+  opacity: 0;
+  animation: holiday-approved-snow var(--snow-speed, 8s)
+    var(--snow-delay, 0.9s) linear infinite;
+}
+
+.theme-snowflake-far {
+  width: 1.5px;
+  height: 1.5px;
+}
+
+.theme-snowflake-mid {
+  width: 2.5px;
+  height: 2.5px;
+}
+
+.theme-snowflake-near {
+  width: 4px;
+  height: 4px;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.58);
+}
+
+.theme-snowflake-one {
+  --snow-left: 8%;
+  --snow-speed: 10.4s;
+  --snow-delay: -3.2s;
+  --snow-drift: -9px;
+}
+
+.theme-snowflake-two {
+  --snow-top: -13%;
+  --snow-left: 19%;
+  --snow-speed: 6.9s;
+  --snow-delay: -5.1s;
+  --snow-drift: 13px;
+}
+
+.theme-snowflake-three {
+  --snow-left: 31%;
+  --snow-speed: 8.2s;
+  --snow-delay: -1.8s;
+  --snow-drift: -6px;
+}
+
+.theme-snowflake-four {
+  --snow-top: -17%;
+  --snow-left: 43%;
+  --snow-speed: 11.1s;
+  --snow-delay: -7.4s;
+  --snow-drift: 8px;
+}
+
+.theme-snowflake-five {
+  --snow-left: 54%;
+  --snow-speed: 7.8s;
+  --snow-delay: -4.6s;
+  --snow-drift: 15px;
+}
+
+.theme-snowflake-six {
+  --snow-top: -14%;
+  --snow-left: 66%;
+  --snow-speed: 7.1s;
+  --snow-delay: -2.2s;
+  --snow-drift: -12px;
+}
+
+.theme-snowflake-seven {
+  --snow-left: 73%;
+  --snow-speed: 10.8s;
+  --snow-delay: -8.3s;
+  --snow-drift: 7px;
+}
+
+.theme-snowflake-eight {
+  --snow-top: -18%;
+  --snow-left: 82%;
+  --snow-speed: 8.6s;
+  --snow-delay: -5.7s;
+  --snow-drift: -8px;
+}
+
+.theme-snowflake-nine {
+  --snow-left: 91%;
+  --snow-speed: 11.6s;
+  --snow-delay: -2.9s;
+  --snow-drift: 5px;
+}
+
+.theme-snowflake-ten {
+  --snow-top: -22%;
+  --snow-left: 48%;
+  --snow-speed: 7.4s;
+  --snow-delay: -6.1s;
+  --snow-drift: -14px;
+}
+
+.theme-snowflake-eleven {
+  --snow-top: -19%;
+  --snow-left: 26%;
+  --snow-speed: 9.2s;
+  --snow-delay: -7.8s;
+  --snow-drift: 11px;
+}
+
+.theme-snowflake-twelve {
+  --snow-top: -24%;
+  --snow-left: 61%;
+  --snow-speed: 10.1s;
+  --snow-delay: -4.1s;
+  --snow-drift: -5px;
+}
+
+.theme-snowflake-thirteen {
+  --snow-top: -12%;
+  --snow-left: 3%;
+  --snow-speed: 8.9s;
+  --snow-delay: -6.8s;
+  --snow-drift: 10px;
+}
+
+.theme-snowflake-fourteen {
+  --snow-top: -20%;
+  --snow-left: 14%;
+  --snow-speed: 12.2s;
+  --snow-delay: -9.5s;
+  --snow-drift: -6px;
+}
+
+.theme-snowflake-fifteen {
+  --snow-top: -15%;
+  --snow-left: 37%;
+  --snow-speed: 7.6s;
+  --snow-delay: -3.7s;
+  --snow-drift: 16px;
+}
+
+.theme-snowflake-sixteen {
+  --snow-top: -10%;
+  --snow-left: 58%;
+  --snow-speed: 9.7s;
+  --snow-delay: -8.9s;
+  --snow-drift: -11px;
+}
+
+.theme-snowflake-seventeen {
+  --snow-top: -23%;
+  --snow-left: 69%;
+  --snow-speed: 11.4s;
+  --snow-delay: -5.3s;
+  --snow-drift: 6px;
+}
+
+.theme-snowflake-eighteen {
+  --snow-top: -16%;
+  --snow-left: 77%;
+  --snow-speed: 8.1s;
+  --snow-delay: -7.2s;
+  --snow-drift: 12px;
+}
+
+.theme-snowflake-nineteen {
+  --snow-top: -11%;
+  --snow-left: 87%;
+  --snow-speed: 6.7s;
+  --snow-delay: -4.9s;
+  --snow-drift: -15px;
+}
+
+.theme-snowflake-twenty {
+  --snow-top: -21%;
+  --snow-left: 97%;
+  --snow-speed: 10.6s;
+  --snow-delay: -8.1s;
+  --snow-drift: -7px;
+}
+
+.theme-decorations-holiday .theme-tree-twinkle {
+  z-index: 2;
+  top: var(--twinkle-top);
+  left: var(--twinkle-left);
+  right: auto;
+  bottom: auto;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(255, 222, 137, 0.76);
+  box-shadow: 0 0 8px 2px rgba(255, 190, 85, 0.48);
+  opacity: 0;
+  animation: holiday-approved-twinkle 3.8s 1.1s ease-in-out infinite alternate;
+}
+
+.theme-tree-twinkle-one {
+  --twinkle-top: 31%;
+  --twinkle-left: 79%;
+}
+
+.theme-tree-twinkle-two {
+  --twinkle-top: 53%;
+  --twinkle-left: 86%;
+  animation-delay: 2.25s;
+}
+
+.theme-tree-twinkle-three {
+  --twinkle-top: 68%;
+  --twinkle-left: 74%;
+  animation-delay: 3.1s;
+}
+
+@keyframes holiday-approved-snow {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -5px, 0);
+  }
+  10% {
+    opacity: 0.72;
+  }
+  88% {
+    opacity: 0.46;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(var(--snow-drift, -8px), 310px, 0);
+  }
+}
+
+@keyframes holiday-snow-layer-reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes holiday-approved-twinkle {
+  to {
+    opacity: 0.7;
+    box-shadow: 0 0 11px 3px rgba(255, 190, 85, 0.58);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-preview-seasonal[data-theme="holiday"] .theme-browser-themed,
+  .theme-preview-seasonal[data-theme="holiday"] .theme-announcement,
+  .theme-preview-seasonal[data-theme="holiday"] .theme-scene > div:last-child,
+  .theme-decorations-holiday {
+    animation: none;
+  }
+
+  .theme-decorations-holiday .theme-snowflake,
+  .theme-decorations-holiday .theme-tree-twinkle {
+    display: none;
+    animation: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .theme-preview-seasonal[data-theme="holiday"] .theme-scene {
+    background-position:
+      0 0,
+      72% center;
+    background-size:
+      auto,
+      cover;
+    background-repeat: no-repeat;
+  }
+
+  .theme-decorations-holiday .theme-snowflake-four,
+  .theme-decorations-holiday .theme-snowflake-seven,
+  .theme-decorations-holiday .theme-snowflake-nine,
+  .theme-decorations-holiday .theme-snowflake-twelve,
+  .theme-decorations-holiday .theme-snowflake-fourteen,
+  .theme-decorations-holiday .theme-snowflake-seventeen {
+    display: none;
+  }
+}

@@ -9,7 +9,11 @@
 @import "./homepage-complete.css";
 @import "./website-modernization.css";
 @import "./pricing.css";
+@import "./pricing-holiday.css";
+@import "./pricing-game-day.css";
+@import "./pricing-halloween.css";
 @import "./pricing-spacing.css";
+@import "./pricing-showcase-polish.css";
 @import "./homepage-section-polish.css";
 @import "./homepage-proof-rebuild.css";
 @import "./homepage-proof-mobile-fix.css";

@@ -1,0 +1,168 @@
+/* Halloween-only layer: approved artwork with live UI and one ambient spider motion. */
+.theme-preview-seasonal[data-theme="halloween"] .theme-browser-themed {
+  animation: halloween-arrival 0.84s cubic-bezier(0.22, 0.8, 0.25, 1) both;
+}
+
+.theme-preview-seasonal[data-theme="halloween"] .theme-preview-label {
+  color: #8b4a75;
+}
+
+.theme-preview-seasonal[data-theme="halloween"] .theme-announcement {
+  border-top: 1px solid rgba(220, 100, 31, 0.8);
+  border-bottom: 1px solid rgba(220, 100, 31, 0.8);
+  background: linear-gradient(90deg, #1e1028, #321642 52%, #1e1028);
+  color: #ef8736;
+  animation: halloween-bar 0.48s 0.18s both;
+}
+
+.theme-preview-seasonal[data-theme="halloween"] .theme-scene {
+  background:
+    linear-gradient(90deg, rgba(8, 8, 12, 0.7) 0%, rgba(15, 8, 20, 0.4) 51%, rgba(15, 8, 20, 0.04) 73%),
+    url("/assets/pine-ridge-halloween.png") 58% center/cover no-repeat;
+}
+
+.theme-preview-seasonal[data-theme="halloween"] .theme-scene::before,
+.theme-preview-seasonal[data-theme="halloween"] .theme-scene::after {
+  display: none;
+}
+
+.theme-preview-seasonal[data-theme="halloween"] .theme-scene > div:last-child {
+  max-width: 235px;
+  animation: halloween-copy 0.52s 0.27s both;
+}
+
+.theme-preview-seasonal[data-theme="halloween"] .theme-scene button {
+  background: #5c2877;
+}
+
+.theme-decorations-halloween {
+  z-index: 2;
+  animation: halloween-spider-layer 0.4s 0.72s both;
+}
+
+.theme-halloween-spider-wrap {
+  position: absolute;
+  top: 9%;
+  right: 12%;
+  width: 60px;
+  height: 92px;
+  pointer-events: none;
+}
+
+.theme-halloween-spider-wrap::before {
+  position: absolute;
+  top: -26px;
+  left: 50%;
+  width: 1px;
+  height: 61px;
+  background: rgba(224, 214, 198, 0.5);
+  content: "";
+  transform: translateX(-50%);
+}
+
+.theme-halloween-spider-wrap .theme-halloween-spider {
+  position: absolute;
+  inset: 29px auto auto 0;
+  width: 60px;
+  height: 60px;
+  background: url("/assets/pine-ridge-halloween-spider.png") center/contain no-repeat;
+  filter: brightness(1.22) contrast(1.08) drop-shadow(0 0 4px rgba(235, 116, 39, 0.35)) drop-shadow(0 4px 5px rgba(0, 0, 0, 0.48));
+  transform-origin: 50% -24px;
+  animation: halloween-spider-hang 6.8s 1.02s ease-in-out infinite alternate;
+}
+
+@keyframes halloween-arrival {
+  0% {
+    opacity: 0.2;
+    filter: saturate(0.72) brightness(0.9);
+    transform: scale(0.995);
+  }
+  64% {
+    opacity: 1;
+    filter: saturate(1.04) brightness(1.01);
+  }
+  100% {
+    filter: none;
+    transform: scale(1);
+  }
+}
+
+@keyframes halloween-bar {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes halloween-copy {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes halloween-spider-layer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes halloween-spider-hang {
+  from {
+    transform: translate3d(0, -2px, 0) rotate(-0.8deg);
+  }
+  to {
+    transform: translate3d(0, 5px, 0) rotate(0.8deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-preview-seasonal[data-theme="halloween"] .theme-browser-themed,
+  .theme-preview-seasonal[data-theme="halloween"] .theme-announcement,
+  .theme-preview-seasonal[data-theme="halloween"] .theme-scene > div:last-child,
+  .theme-decorations-halloween,
+  .theme-halloween-spider-wrap .theme-halloween-spider {
+    animation: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .theme-preview-seasonal[data-theme="halloween"] .theme-scene {
+    background-position:
+      0 0,
+      66% center;
+    background-size:
+      auto,
+      cover;
+    background-repeat: no-repeat;
+  }
+
+  .theme-halloween-spider-wrap {
+    top: 9%;
+    right: 2%;
+    width: 44px;
+    height: 70px;
+  }
+
+  .theme-halloween-spider-wrap::before {
+    top: -18px;
+    height: 45px;
+  }
+
+  .theme-halloween-spider-wrap .theme-halloween-spider {
+    inset: 22px auto auto 0;
+    width: 44px;
+    height: 44px;
+  }
+}
