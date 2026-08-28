@@ -16,7 +16,7 @@ const modernizationAreas = [
   ["Navigation & hierarchy", "Make important information easier to find and understand."],
   ["Calls to action", "Make the next step clear without making customers search for it."],
   ["Visual presentation", "Improve typography, spacing, imagery, and overall credibility."],
-  ["Structure & performance", "Clean up the page structure, accessibility fundamentals, and obvious performance or compatibility issues."],
+  ["Structure, performance & discoverability", "Clean up page structure, accessibility, performance, and the technical foundations that help search engines and AI-powered discovery tools understand your site."],
 ];
 const retainedAssets = [
   "Your brand and business personality",

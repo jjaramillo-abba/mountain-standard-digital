@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Shell } from "@/components/site-shell";
 import { ThemeShowcase } from "@/components/theme-showcase";
-const modernizationIncludes=["Typically 1–3 primary pages or equivalent simple scope","Existing brand, content, and photography carried forward where useful","Modern, mobile-first design with clearer navigation and contact paths","Launch or migration support, with accessibility and performance fundamentals"];
+const modernizationIncludes=["Typically 1–3 primary pages or equivalent simple scope","Existing brand, content, and photography carried forward where useful","Modern, mobile-first design with clearer navigation and contact paths","Launch or migration support, with accessibility, performance, and search-ready fundamentals"];
 const careIncludes=["MSD-managed hosting, SSL, and basic uptime monitoring","Routine site maintenance and practical technical upkeep","Small text, image, or contact-information changes within reasonable use"];
 const enhancements=[["Additional pages & content support","Add pages, expand content, or get help refining what the site needs to say."],["Booking & integrations","Add appointment scheduling, more advanced forms, or other practical connections when needed."],["Seasonal & event themes","Temporary visual treatments for holidays, promotions, anniversaries, local events, or approved game-day themes."]];
 export default function PricingPage(){return <Shell><div className="pricing-page">
