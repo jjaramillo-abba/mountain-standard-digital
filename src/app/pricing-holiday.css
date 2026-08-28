@@ -33,6 +33,10 @@
   animation: holiday-copy 0.55s 0.25s both;
 }
 
+.theme-decorations-holiday {
+  animation: holiday-snow-layer-reveal 0.45s 0.75s both;
+}
+
 .theme-snowflake {
   z-index: 3;
   top: -8%;
@@ -65,7 +69,7 @@
 .theme-snowflake-one {
   left: 8%;
   --snow-speed: 10.4s;
-  --snow-delay: 1.2s;
+  --snow-delay: -3.2s;
   --snow-drift: -9px;
 }
 
@@ -73,14 +77,14 @@
   top: -13%;
   left: 19%;
   --snow-speed: 6.9s;
-  --snow-delay: 1.7s;
+  --snow-delay: -5.1s;
   --snow-drift: 13px;
 }
 
 .theme-snowflake-three {
   left: 31%;
   --snow-speed: 8.2s;
-  --snow-delay: 0.95s;
+  --snow-delay: -1.8s;
   --snow-drift: -6px;
 }
 
@@ -88,14 +92,14 @@
   top: -17%;
   left: 43%;
   --snow-speed: 11.1s;
-  --snow-delay: 2.4s;
+  --snow-delay: -7.4s;
   --snow-drift: 8px;
 }
 
 .theme-snowflake-five {
   left: 54%;
   --snow-speed: 7.8s;
-  --snow-delay: 1.35s;
+  --snow-delay: -4.6s;
   --snow-drift: 15px;
 }
 
@@ -103,14 +107,14 @@
   top: -14%;
   left: 66%;
   --snow-speed: 7.1s;
-  --snow-delay: 2.1s;
+  --snow-delay: -2.2s;
   --snow-drift: -12px;
 }
 
 .theme-snowflake-seven {
   left: 73%;
   --snow-speed: 10.8s;
-  --snow-delay: 3s;
+  --snow-delay: -8.3s;
   --snow-drift: 7px;
 }
 
@@ -118,14 +122,14 @@
   top: -18%;
   left: 82%;
   --snow-speed: 8.6s;
-  --snow-delay: 1.55s;
+  --snow-delay: -5.7s;
   --snow-drift: -8px;
 }
 
 .theme-snowflake-nine {
   left: 91%;
   --snow-speed: 11.6s;
-  --snow-delay: 2.7s;
+  --snow-delay: -2.9s;
   --snow-drift: 5px;
 }
 
@@ -133,7 +137,7 @@
   top: -22%;
   left: 48%;
   --snow-speed: 7.4s;
-  --snow-delay: 3.35s;
+  --snow-delay: -6.1s;
   --snow-drift: -14px;
 }
 
@@ -141,7 +145,7 @@
   top: -19%;
   left: 26%;
   --snow-speed: 9.2s;
-  --snow-delay: 3.9s;
+  --snow-delay: -7.8s;
   --snow-drift: 11px;
 }
 
@@ -149,8 +153,72 @@
   top: -24%;
   left: 61%;
   --snow-speed: 10.1s;
-  --snow-delay: 4.4s;
+  --snow-delay: -4.1s;
   --snow-drift: -5px;
+}
+
+.theme-snowflake-thirteen {
+  top: -12%;
+  left: 3%;
+  --snow-speed: 8.9s;
+  --snow-delay: -6.8s;
+  --snow-drift: 10px;
+}
+
+.theme-snowflake-fourteen {
+  top: -20%;
+  left: 14%;
+  --snow-speed: 12.2s;
+  --snow-delay: -9.5s;
+  --snow-drift: -6px;
+}
+
+.theme-snowflake-fifteen {
+  top: -15%;
+  left: 37%;
+  --snow-speed: 7.6s;
+  --snow-delay: -3.7s;
+  --snow-drift: 16px;
+}
+
+.theme-snowflake-sixteen {
+  top: -10%;
+  left: 58%;
+  --snow-speed: 9.7s;
+  --snow-delay: -8.9s;
+  --snow-drift: -11px;
+}
+
+.theme-snowflake-seventeen {
+  top: -23%;
+  left: 69%;
+  --snow-speed: 11.4s;
+  --snow-delay: -5.3s;
+  --snow-drift: 6px;
+}
+
+.theme-snowflake-eighteen {
+  top: -16%;
+  left: 77%;
+  --snow-speed: 8.1s;
+  --snow-delay: -7.2s;
+  --snow-drift: 12px;
+}
+
+.theme-snowflake-nineteen {
+  top: -11%;
+  left: 87%;
+  --snow-speed: 6.7s;
+  --snow-delay: -4.9s;
+  --snow-drift: -15px;
+}
+
+.theme-snowflake-twenty {
+  top: -21%;
+  left: 97%;
+  --snow-speed: 10.6s;
+  --snow-delay: -8.1s;
+  --snow-drift: -7px;
 }
 
 .theme-tree-twinkle {
@@ -200,6 +268,15 @@
   }
 }
 
+@keyframes holiday-snow-layer-reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes holiday-approved-twinkle {
   to {
     opacity: 0.7;
@@ -210,7 +287,8 @@
 @media (prefers-reduced-motion: reduce) {
   .theme-preview-seasonal[data-theme="holiday"] .theme-browser-themed,
   .theme-preview-seasonal[data-theme="holiday"] .theme-announcement,
-  .theme-preview-seasonal[data-theme="holiday"] .theme-scene > div:last-child {
+  .theme-preview-seasonal[data-theme="holiday"] .theme-scene > div:last-child,
+  .theme-decorations-holiday {
     animation: none;
   }
 
@@ -235,7 +313,9 @@
   .theme-decorations-holiday .theme-snowflake-four,
   .theme-decorations-holiday .theme-snowflake-seven,
   .theme-decorations-holiday .theme-snowflake-nine,
-  .theme-decorations-holiday .theme-snowflake-twelve {
+  .theme-decorations-holiday .theme-snowflake-twelve,
+  .theme-decorations-holiday .theme-snowflake-fourteen,
+  .theme-decorations-holiday .theme-snowflake-seventeen {
     display: none;
   }
 }
