@@ -13,7 +13,7 @@ export type ContactCard = {
 
 const sharedContact = {
   organization: "Mountain Standard Digital",
-  website: "https://mountainstandard.digital",
+  website: "https://mountainstandarddigital.com",
   linkedin: null, // Add only a confirmed LinkedIn URL.
 } as const;
 
