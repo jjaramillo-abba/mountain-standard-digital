@@ -23,8 +23,8 @@ const themes: Record<Theme, { label: string; number: string; announcement: strin
     label: "HALLOWEEN",
     number: "04",
     announcement: "HAPPY HALLOWEEN",
-    title: <>Scary good landscaping.</>,
-    supporting: "Great outdoor spaces shouldn't be frightening.",
+    title: <>A little spooky.<br />Still beautifully maintained.</>,
+    supporting: "Seasonal style, without losing the character of your brand.",
   },
 };
 
@@ -40,7 +40,7 @@ function ThemeDecorations({ theme }: { theme: Theme }) {
     <i className="theme-tree-twinkle theme-tree-twinkle-one" /><i className="theme-tree-twinkle theme-tree-twinkle-two" /><i className="theme-tree-twinkle theme-tree-twinkle-three" />
   </div>;
   if (theme === "game-day") return null;
-  return <div className="theme-decorations theme-decorations-halloween" aria-hidden="true"><i className="theme-web theme-web-left" /><i className="theme-web theme-web-right" /><i className="theme-bat theme-bat-one" /><i className="theme-bat theme-bat-two" /><i className="theme-leaf theme-leaf-one" /><i className="theme-leaf theme-leaf-two" /></div>;
+  return <div className="theme-decorations theme-decorations-halloween" aria-hidden="true"><span className="theme-halloween-spider-wrap"><i className="theme-halloween-spider" /></span></div>;
 }
 
 export function ThemeShowcase() {
